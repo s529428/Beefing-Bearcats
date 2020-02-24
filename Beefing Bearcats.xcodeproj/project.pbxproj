@@ -7,21 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		521F9D8D240375F400806B38 /* excersiceInfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521F9D8C240375F400806B38 /* excersiceInfoTableViewController.swift */; };
+		521F9D97240379AD00806B38 /* icons8-ios-filled-excercise-small.png in Resources */ = {isa = PBXBuildFile; fileRef = 521F9D96240379AD00806B38 /* icons8-ios-filled-excercise-small.png */; };
+		521F9D9924037A1F00806B38 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521F9D9824037A1F00806B38 /* HomeViewController.swift */; };
+		521F9D9B24037AC500806B38 /* icons8-trophy-36.png in Resources */ = {isa = PBXBuildFile; fileRef = 521F9D9A24037AC500806B38 /* icons8-trophy-36.png */; };
+		521F9D9D24037AF000806B38 /* icons8-dumbbell-36.png in Resources */ = {isa = PBXBuildFile; fileRef = 521F9D9C24037AF000806B38 /* icons8-dumbbell-36.png */; };
+		521F9D9F24037B1000806B38 /* icons8-ios-filled-36.png in Resources */ = {isa = PBXBuildFile; fileRef = 521F9D9E24037B0F00806B38 /* icons8-ios-filled-36.png */; };
+		521F9DA324037C1F00806B38 /* RecordsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521F9DA224037C1F00806B38 /* RecordsTableViewController.swift */; };
+		521F9DA524037D5900806B38 /* PlansTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521F9DA424037D5900806B38 /* PlansTableViewController.swift */; };
 		B0EBAED823FEE41200AB2590 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EBAED723FEE41200AB2590 /* AppDelegate.swift */; };
 		B0EBAEDA23FEE41200AB2590 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EBAED923FEE41200AB2590 /* SceneDelegate.swift */; };
-		B0EBAEDC23FEE41200AB2590 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EBAEDB23FEE41200AB2590 /* FirstViewController.swift */; };
-		B0EBAEDE23FEE41200AB2590 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EBAEDD23FEE41200AB2590 /* SecondViewController.swift */; };
 		B0EBAEE123FEE41200AB2590 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0EBAEDF23FEE41200AB2590 /* Main.storyboard */; };
 		B0EBAEE323FEE41300AB2590 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0EBAEE223FEE41300AB2590 /* Assets.xcassets */; };
 		B0EBAEE623FEE41300AB2590 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0EBAEE423FEE41300AB2590 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		521F9D8C240375F400806B38 /* excersiceInfoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = excersiceInfoTableViewController.swift; sourceTree = "<group>"; };
+		521F9D96240379AD00806B38 /* icons8-ios-filled-excercise-small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-ios-filled-excercise-small.png"; sourceTree = "<group>"; };
+		521F9D9824037A1F00806B38 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		521F9D9A24037AC500806B38 /* icons8-trophy-36.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-trophy-36.png"; sourceTree = "<group>"; };
+		521F9D9C24037AF000806B38 /* icons8-dumbbell-36.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-dumbbell-36.png"; sourceTree = "<group>"; };
+		521F9D9E24037B0F00806B38 /* icons8-ios-filled-36.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-ios-filled-36.png"; sourceTree = "<group>"; };
+		521F9DA224037C1F00806B38 /* RecordsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordsTableViewController.swift; sourceTree = "<group>"; };
+		521F9DA424037D5900806B38 /* PlansTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlansTableViewController.swift; sourceTree = "<group>"; };
 		B0EBAED423FEE41200AB2590 /* Beefing Bearcats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Beefing Bearcats.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0EBAED723FEE41200AB2590 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0EBAED923FEE41200AB2590 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B0EBAEDB23FEE41200AB2590 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		B0EBAEDD23FEE41200AB2590 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		B0EBAEE023FEE41200AB2590 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B0EBAEE223FEE41300AB2590 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B0EBAEE523FEE41300AB2590 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -39,6 +51,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		521F9DA624037E1F00806B38 /* viewcontrollers */ = {
+			isa = PBXGroup;
+			children = (
+				521F9D9824037A1F00806B38 /* HomeViewController.swift */,
+				521F9D8C240375F400806B38 /* excersiceInfoTableViewController.swift */,
+				521F9DA424037D5900806B38 /* PlansTableViewController.swift */,
+				521F9DA224037C1F00806B38 /* RecordsTableViewController.swift */,
+			);
+			path = viewcontrollers;
+			sourceTree = "<group>";
+		};
 		B0EBAECB23FEE41200AB2590 = {
 			isa = PBXGroup;
 			children = (
@@ -58,10 +81,13 @@
 		B0EBAED623FEE41200AB2590 /* Beefing Bearcats */ = {
 			isa = PBXGroup;
 			children = (
+				521F9DA624037E1F00806B38 /* viewcontrollers */,
+				521F9D9C24037AF000806B38 /* icons8-dumbbell-36.png */,
+				521F9D9A24037AC500806B38 /* icons8-trophy-36.png */,
+				521F9D96240379AD00806B38 /* icons8-ios-filled-excercise-small.png */,
+				521F9D9E24037B0F00806B38 /* icons8-ios-filled-36.png */,
 				B0EBAED723FEE41200AB2590 /* AppDelegate.swift */,
 				B0EBAED923FEE41200AB2590 /* SceneDelegate.swift */,
-				B0EBAEDB23FEE41200AB2590 /* FirstViewController.swift */,
-				B0EBAEDD23FEE41200AB2590 /* SecondViewController.swift */,
 				B0EBAEDF23FEE41200AB2590 /* Main.storyboard */,
 				B0EBAEE223FEE41300AB2590 /* Assets.xcassets */,
 				B0EBAEE423FEE41300AB2590 /* LaunchScreen.storyboard */,
@@ -128,9 +154,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				521F9D9D24037AF000806B38 /* icons8-dumbbell-36.png in Resources */,
 				B0EBAEE623FEE41300AB2590 /* LaunchScreen.storyboard in Resources */,
 				B0EBAEE323FEE41300AB2590 /* Assets.xcassets in Resources */,
 				B0EBAEE123FEE41200AB2590 /* Main.storyboard in Resources */,
+				521F9D9B24037AC500806B38 /* icons8-trophy-36.png in Resources */,
+				521F9D97240379AD00806B38 /* icons8-ios-filled-excercise-small.png in Resources */,
+				521F9D9F24037B1000806B38 /* icons8-ios-filled-36.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,10 +171,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0EBAEDE23FEE41200AB2590 /* SecondViewController.swift in Sources */,
-				B0EBAEDC23FEE41200AB2590 /* FirstViewController.swift in Sources */,
 				B0EBAED823FEE41200AB2590 /* AppDelegate.swift in Sources */,
 				B0EBAEDA23FEE41200AB2590 /* SceneDelegate.swift in Sources */,
+				521F9D8D240375F400806B38 /* excersiceInfoTableViewController.swift in Sources */,
+				521F9D9924037A1F00806B38 /* HomeViewController.swift in Sources */,
+				521F9DA524037D5900806B38 /* PlansTableViewController.swift in Sources */,
+				521F9DA324037C1F00806B38 /* RecordsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,11 +9,23 @@
 import UIKit
 
 class excersiceInfoTableViewController: UITableViewController {
+    
+    struct Excercise {
+        let name:String
+        let explanation:String
+        let imagePath:String
+        
+    }
+    
+    var excerciseForShow:[Excercise] = [
+        Excercise(name: "Military Press", explanation: "Start with the barbell resting on your collar bone, around shoulder height. Then lift the weight up until your arms are almost fully extended straight up. Finish one rep by lowering the weight back down to collarbone.", imagePath: "")
+    ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tabBarItem.image = UIImage(named: "icons8-ios-filled-excercise-small.png")
-
+        
+        navigationItem.title = "EXCERSICES"
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -23,25 +35,34 @@ class excersiceInfoTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 180.0
+    }
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return excerciseForShow.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "excersiceDescription")!
+        
+        let nameLBL = cell.viewWithTag(44) as! UILabel
+        let explanationLBL = cell.viewWithTag(45) as! UILabel
+        
+        nameLBL.text = excerciseForShow[indexPath.row].name.uppercased()
+        explanationLBL.text = excerciseForShow[indexPath.row].explanation
 
-        // Configure the cell...
-
+        
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.
@@ -87,5 +108,7 @@ class excersiceInfoTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+
 
 }

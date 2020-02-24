@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F70157124047F5700D21493 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F70157024047F5700D21493 /* ViewController.swift */; };
 		521F9D8D240375F400806B38 /* excersiceInfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521F9D8C240375F400806B38 /* excersiceInfoTableViewController.swift */; };
 		521F9D97240379AD00806B38 /* icons8-ios-filled-excercise-small.png in Resources */ = {isa = PBXBuildFile; fileRef = 521F9D96240379AD00806B38 /* icons8-ios-filled-excercise-small.png */; };
 		521F9D9924037A1F00806B38 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521F9D9824037A1F00806B38 /* HomeViewController.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F70157024047F5700D21493 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		521F9D8C240375F400806B38 /* excersiceInfoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = excersiceInfoTableViewController.swift; sourceTree = "<group>"; };
 		521F9D96240379AD00806B38 /* icons8-ios-filled-excercise-small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-ios-filled-excercise-small.png"; sourceTree = "<group>"; };
 		521F9D9824037A1F00806B38 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 				521F9D96240379AD00806B38 /* icons8-ios-filled-excercise-small.png */,
 				521F9D9E24037B0F00806B38 /* icons8-ios-filled-36.png */,
 				B0EBAED723FEE41200AB2590 /* AppDelegate.swift */,
+				3F70157024047F5700D21493 /* ViewController.swift */,
 				B0EBAED923FEE41200AB2590 /* SceneDelegate.swift */,
 				B0EBAEDF23FEE41200AB2590 /* Main.storyboard */,
 				B0EBAEE223FEE41300AB2590 /* Assets.xcassets */,
@@ -175,6 +178,7 @@
 				B0EBAEDA23FEE41200AB2590 /* SceneDelegate.swift in Sources */,
 				521F9D8D240375F400806B38 /* excersiceInfoTableViewController.swift in Sources */,
 				521F9D9924037A1F00806B38 /* HomeViewController.swift in Sources */,
+				3F70157124047F5700D21493 /* ViewController.swift in Sources */,
 				521F9DA524037D5900806B38 /* PlansTableViewController.swift in Sources */,
 				521F9DA324037C1F00806B38 /* RecordsTableViewController.swift in Sources */,
 			);

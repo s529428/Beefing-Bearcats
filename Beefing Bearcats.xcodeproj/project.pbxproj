@@ -64,6 +64,17 @@
 			path = viewcontrollers;
 			sourceTree = "<group>";
 		};
+		B07624632405790C005AD52A /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				521F9D9C24037AF000806B38 /* icons8-dumbbell-36.png */,
+				521F9D9E24037B0F00806B38 /* icons8-ios-filled-36.png */,
+				521F9D96240379AD00806B38 /* icons8-ios-filled-excercise-small.png */,
+				521F9D9A24037AC500806B38 /* icons8-trophy-36.png */,
+			);
+			path = Icons;
+			sourceTree = "<group>";
+		};
 		B0EBAECB23FEE41200AB2590 = {
 			isa = PBXGroup;
 			children = (
@@ -84,10 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				521F9DA624037E1F00806B38 /* viewcontrollers */,
-				521F9D9C24037AF000806B38 /* icons8-dumbbell-36.png */,
-				521F9D9A24037AC500806B38 /* icons8-trophy-36.png */,
-				521F9D96240379AD00806B38 /* icons8-ios-filled-excercise-small.png */,
-				521F9D9E24037B0F00806B38 /* icons8-ios-filled-36.png */,
+				B07624632405790C005AD52A /* Icons */,
 				B0EBAED723FEE41200AB2590 /* AppDelegate.swift */,
 				3F70157024047F5700D21493 /* ViewController.swift */,
 				B0EBAED923FEE41200AB2590 /* SceneDelegate.swift */,

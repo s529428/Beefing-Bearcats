@@ -8,7 +8,7 @@
 
 import UIKit
 
-class excersiceInfoTableViewController: UITableViewController {
+class ExcersiceTableViewController: UITableViewController {
     
     struct Excercise {
         let name:String
@@ -109,6 +109,10 @@ class excersiceInfoTableViewController: UITableViewController {
     }
     */
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cell = tableView.cellForRow(at: indexPath)
+        print(cell?.viewWithTag(44))
+    }
 
 
 }

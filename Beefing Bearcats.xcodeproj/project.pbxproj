@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3F70157124047F5700D21493 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F70157024047F5700D21493 /* ViewController.swift */; };
-		521F9D8D240375F400806B38 /* excersiceInfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521F9D8C240375F400806B38 /* excersiceInfoTableViewController.swift */; };
+		521F9D8D240375F400806B38 /* ExcersiceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521F9D8C240375F400806B38 /* ExcersiceTableViewController.swift */; };
 		521F9D97240379AD00806B38 /* icons8-ios-filled-excercise-small.png in Resources */ = {isa = PBXBuildFile; fileRef = 521F9D96240379AD00806B38 /* icons8-ios-filled-excercise-small.png */; };
 		521F9D9924037A1F00806B38 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521F9D9824037A1F00806B38 /* HomeViewController.swift */; };
 		521F9D9B24037AC500806B38 /* icons8-trophy-36.png in Resources */ = {isa = PBXBuildFile; fileRef = 521F9D9A24037AC500806B38 /* icons8-trophy-36.png */; };
@@ -16,6 +16,7 @@
 		521F9D9F24037B1000806B38 /* icons8-ios-filled-36.png in Resources */ = {isa = PBXBuildFile; fileRef = 521F9D9E24037B0F00806B38 /* icons8-ios-filled-36.png */; };
 		521F9DA324037C1F00806B38 /* RecordsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521F9DA224037C1F00806B38 /* RecordsTableViewController.swift */; };
 		521F9DA524037D5900806B38 /* PlansTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521F9DA424037D5900806B38 /* PlansTableViewController.swift */; };
+		521F9DD02405D82100806B38 /* ExcerciseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521F9DCF2405D82100806B38 /* ExcerciseDetailViewController.swift */; };
 		B0EBAED823FEE41200AB2590 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EBAED723FEE41200AB2590 /* AppDelegate.swift */; };
 		B0EBAEDA23FEE41200AB2590 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EBAED923FEE41200AB2590 /* SceneDelegate.swift */; };
 		B0EBAEE123FEE41200AB2590 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0EBAEDF23FEE41200AB2590 /* Main.storyboard */; };
@@ -25,7 +26,7 @@
 
 /* Begin PBXFileReference section */
 		3F70157024047F5700D21493 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		521F9D8C240375F400806B38 /* excersiceInfoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = excersiceInfoTableViewController.swift; sourceTree = "<group>"; };
+		521F9D8C240375F400806B38 /* ExcersiceTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcersiceTableViewController.swift; sourceTree = "<group>"; };
 		521F9D96240379AD00806B38 /* icons8-ios-filled-excercise-small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-ios-filled-excercise-small.png"; sourceTree = "<group>"; };
 		521F9D9824037A1F00806B38 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		521F9D9A24037AC500806B38 /* icons8-trophy-36.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-trophy-36.png"; sourceTree = "<group>"; };
@@ -33,6 +34,7 @@
 		521F9D9E24037B0F00806B38 /* icons8-ios-filled-36.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-ios-filled-36.png"; sourceTree = "<group>"; };
 		521F9DA224037C1F00806B38 /* RecordsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordsTableViewController.swift; sourceTree = "<group>"; };
 		521F9DA424037D5900806B38 /* PlansTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlansTableViewController.swift; sourceTree = "<group>"; };
+		521F9DCF2405D82100806B38 /* ExcerciseDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcerciseDetailViewController.swift; sourceTree = "<group>"; };
 		B0EBAED423FEE41200AB2590 /* Beefing Bearcats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Beefing Bearcats.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0EBAED723FEE41200AB2590 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0EBAED923FEE41200AB2590 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,8 +58,9 @@
 		521F9DA624037E1F00806B38 /* viewcontrollers */ = {
 			isa = PBXGroup;
 			children = (
+				521F9DCF2405D82100806B38 /* ExcerciseDetailViewController.swift */,
 				521F9D9824037A1F00806B38 /* HomeViewController.swift */,
-				521F9D8C240375F400806B38 /* excersiceInfoTableViewController.swift */,
+				521F9D8C240375F400806B38 /* ExcersiceTableViewController.swift */,
 				521F9DA424037D5900806B38 /* PlansTableViewController.swift */,
 				521F9DA224037C1F00806B38 /* RecordsTableViewController.swift */,
 			);
@@ -184,7 +187,8 @@
 			files = (
 				B0EBAED823FEE41200AB2590 /* AppDelegate.swift in Sources */,
 				B0EBAEDA23FEE41200AB2590 /* SceneDelegate.swift in Sources */,
-				521F9D8D240375F400806B38 /* excersiceInfoTableViewController.swift in Sources */,
+				521F9D8D240375F400806B38 /* ExcersiceTableViewController.swift in Sources */,
+				521F9DD02405D82100806B38 /* ExcerciseDetailViewController.swift in Sources */,
 				521F9D9924037A1F00806B38 /* HomeViewController.swift in Sources */,
 				3F70157124047F5700D21493 /* ViewController.swift in Sources */,
 				521F9DA524037D5900806B38 /* PlansTableViewController.swift in Sources */,

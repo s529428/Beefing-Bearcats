@@ -10,11 +10,13 @@ import UIKit
 
 class ExcersiceTableViewController: UITableViewController {
     
-
+    required init?(coder: NSCoder) {
+        super.init(coder:coder)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tabBarItem.image = UIImage(named: "icons8-ios-filled-excercise-small.png")
+        self.tabBarItem.image = UIImage(named: "first")
         
         navigationItem.title = "EXCERSICES"
         // Uncomment the following line to preserve selection between presentations
@@ -23,7 +25,11 @@ class ExcersiceTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
-
+    
+    override func viewWillAppear(_ animated: Bool) {
+        tableView.reloadData()
+    }
+    
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

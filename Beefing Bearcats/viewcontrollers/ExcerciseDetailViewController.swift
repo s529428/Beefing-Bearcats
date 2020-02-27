@@ -14,12 +14,18 @@ class ExcerciseDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.title = exercise.name
+        navigationItem.title = exercise.name.uppercased()
 
         // Do any additional setup after loading the view.
     }
     
-
+    @IBOutlet weak var exerciseName:UILabel!
+    @IBOutlet weak var explanationLBL:UILabel!
+    @IBOutlet weak var exerciseIV:UIImageView!
+    
+    
+    
+    
     /*
     // MARK: - Navigation
 

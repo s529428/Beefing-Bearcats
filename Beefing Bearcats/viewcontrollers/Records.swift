@@ -26,12 +26,12 @@ class Records {
         return _shared
     }
     
-    private var records:[Record] = [ Record(name:"Demo1",repitations: 1,Sets: 2,weight: 10),
-                                         Record(name:"Demo1",repitations: 1,Sets: 2,weight: 10),
-        Record(name:"Demo1",repitations: 1,Sets: 2,weight: 10),
-        Record(name:"Demo1",repitations: 1,Sets: 2,weight: 10),
-        Record(name:"Demo1",repitations: 1,Sets: 2,weight: 10),
-        Record(name:"Demo1",repitations: 1,Sets: 2,weight: 10)
+    private var records:[Record] = [ Record(name:"Goblet Squat",repitations: 10,Sets: 5,weight: 30),
+                                         Record(name:"Dumbbell Clean",repitations: 10,Sets: 5,weight: 20),
+        Record(name:"Farmers’ Walk",repitations: 10,Sets: 5,weight: 40),
+        Record(name:"Bent-Over Row",repitations: 5,Sets: 3,weight: 20),
+        Record(name:"One Arm Swing",repitations: 10,Sets: 3,weight: 15),
+        Record(name:"Dumbbell Bench Press",repitations: 10,Sets: 2,weight: 40)
     ]
     
     private init(){                         // We can't make another Restaurants instance, which is a Good Thing: we only want 1 model

@@ -24,6 +24,13 @@ class ExcerciseDetailViewController: UIViewController {
     @IBOutlet weak var exerciseIV:UIImageView!
     
     
+    override func viewWillAppear(_ animated: Bool) {
+        //Ask Rogers how to top left align labels while giving them enough space for lots of text
+        //explanationLBL.numberOfLines = 30
+        //explanationLBL.sizeToFit()
+        exerciseName.text = exercise.name.uppercased()
+        explanationLBL.text = exercise.explanation
+    }
     
     
     /*

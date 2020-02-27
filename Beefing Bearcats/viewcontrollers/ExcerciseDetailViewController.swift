@@ -10,8 +10,11 @@ import UIKit
 
 class ExcerciseDetailViewController: UIViewController {
 
+    var exercise:Exercise!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.title = exercise.name
 
         // Do any additional setup after loading the view.
     }

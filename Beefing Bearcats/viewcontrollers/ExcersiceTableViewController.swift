@@ -10,16 +10,7 @@ import UIKit
 
 class ExcersiceTableViewController: UITableViewController {
     
-    struct Excercise {
-        let name:String
-        let explanation:String
-        let imagePath:String
-        
-    }
-    
-    var excerciseForShow:[Excercise] = [
-        Excercise(name: "Military Press", explanation: "Start with the barbell resting on your collar bone, around shoulder height. Then lift the weight up until your arms are almost fully extended straight up. Finish one rep by lowering the weight back down to collarbone.", imagePath: "")
-    ]
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,7 +37,7 @@ class ExcersiceTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return excerciseForShow.count
+        return Exercises.shared.numExercises()
     }
 
     
@@ -56,8 +47,8 @@ class ExcersiceTableViewController: UITableViewController {
         let nameLBL = cell.viewWithTag(44) as! UILabel
         let explanationLBL = cell.viewWithTag(45) as! UILabel
         
-        nameLBL.text = excerciseForShow[indexPath.row].name.uppercased()
-        explanationLBL.text = excerciseForShow[indexPath.row].explanation
+        nameLBL.text = Exercises.shared.getExercise(indexPath.row)!.name.uppercased()
+        explanationLBL.text = Exercises.shared.getExercise(indexPath.row)!.explanation
 
         
         return cell
@@ -110,9 +101,11 @@ class ExcersiceTableViewController: UITableViewController {
     */
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let cell = tableView.cellForRow(at: indexPath)
-        print(cell?.viewWithTag(44))
+        let excersiceDetailVC = storyboard?.instantiateViewController(withIdentifier: "excerciseDetailViewController") as! ExcerciseDetailViewController
+        excersiceDetailVC.exercise = Exercises.shared.getExercise(indexPath.row)
+        navigationController?.pushViewController(excersiceDetailVC, animated: true)
     }
 
 
 }
+

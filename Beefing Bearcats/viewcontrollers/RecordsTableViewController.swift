@@ -10,6 +10,8 @@ import UIKit
 
 class RecordsTableViewController: UITableViewController {
 
+    var records=Records.shared
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tabBarItem.image = UIImage(named: "icons8-trophy-36.png")
@@ -25,14 +27,43 @@ class RecordsTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return records.numberOfRecords()
     }
+    let d:CGFloat = 300
 
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return d
+    }
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "record", for: indexPath)
+        if let record=Records.shared[indexPath.row]
+        {
+            let nameLBL = cell.viewWithTag(10) as! UILabel
+            let repitationTF = cell.viewWithTag(100) as! UITextField
+            let setsTF = cell.viewWithTag(200) as! UITextField
+            let weightTF = cell.viewWithTag(300) as! UITextField
+            nameLBL.text = record.name
+            
+            repitationTF.text=String(record.repitations)
+            setsTF.text=String(record.Sets)
+            weightTF.text=String(record.weight)
+            
+            
+        }
+
+        
+        //cell.textLabel!.text = restaurents.getRestaurant(at: indexPath.row)?.name
+        
+        
+        // Configure the cell...
+
+        return cell
+    }
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)

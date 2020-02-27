@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F4D6B112407936B00B2AB47 /* Records.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4D6B102407936B00B2AB47 /* Records.swift */; };
 		3F70157124047F5700D21493 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F70157024047F5700D21493 /* ViewController.swift */; };
 		521F9D8D240375F400806B38 /* ExcersiceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521F9D8C240375F400806B38 /* ExcersiceTableViewController.swift */; };
 		521F9D97240379AD00806B38 /* icons8-ios-filled-excercise-small.png in Resources */ = {isa = PBXBuildFile; fileRef = 521F9D96240379AD00806B38 /* icons8-ios-filled-excercise-small.png */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F4D6B102407936B00B2AB47 /* Records.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Records.swift; sourceTree = "<group>"; };
 		3F70157024047F5700D21493 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		521F9D8C240375F400806B38 /* ExcersiceTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcersiceTableViewController.swift; sourceTree = "<group>"; };
 		521F9D96240379AD00806B38 /* icons8-ios-filled-excercise-small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-ios-filled-excercise-small.png"; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				521F9D8C240375F400806B38 /* ExcersiceTableViewController.swift */,
 				521F9DA424037D5900806B38 /* PlansTableViewController.swift */,
 				521F9DA224037C1F00806B38 /* RecordsTableViewController.swift */,
+				3F4D6B102407936B00B2AB47 /* Records.swift */,
 			);
 			path = viewcontrollers;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 				B0EBAED823FEE41200AB2590 /* AppDelegate.swift in Sources */,
 				B0EBAEDA23FEE41200AB2590 /* SceneDelegate.swift in Sources */,
 				521F9D8D240375F400806B38 /* ExcersiceTableViewController.swift in Sources */,
+				3F4D6B112407936B00B2AB47 /* Records.swift in Sources */,
 				521F9DD02405D82100806B38 /* ExcerciseDetailViewController.swift in Sources */,
 				521F9D9924037A1F00806B38 /* HomeViewController.swift in Sources */,
 				3F70157124047F5700D21493 /* ViewController.swift in Sources */,

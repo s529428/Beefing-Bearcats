@@ -66,13 +66,11 @@
                             <outlet property="delegate" destination="0Ne-g8-el9" id="91m-2a-8do"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="" selectedImage="icons8-ios-filled-excercise-small.png" id="ySW-un-eQE">
-                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
-                    </tabBarItem>
+                    <navigationItem key="navigationItem" id="WZS-Cc-daP"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sC8-Qr-P1d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="747.82608695652175" y="-625.44642857142856"/>
+            <point key="canvasLocation" x="1657.9710144927537" y="-625.44642857142856"/>
         </scene>
         <!--Excercise Detail View Controller-->
         <scene sceneID="pFL-x7-VLk">
@@ -119,10 +117,15 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="Rx1-Yl-OHh"/>
                     </view>
+                    <connections>
+                        <outlet property="exerciseIV" destination="Nkv-Q8-Sxs" id="ttj-Ke-D4j"/>
+                        <outlet property="exerciseName" destination="m0O-AO-3sQ" id="0Sc-mU-YhM"/>
+                        <outlet property="explanationLBL" destination="6wZ-Cx-n0X" id="PaG-AL-WAW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gsV-tK-S7j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1521.7391304347827" y="-626.11607142857144"/>
+            <point key="canvasLocation" x="2431.8840579710145" y="-626.11607142857144"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -135,7 +138,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="k4v-pD-2Va" kind="relationship" relationship="viewControllers" id="8Qj-DA-JVo"/>
-                        <segue destination="0Ne-g8-el9" kind="relationship" relationship="viewControllers" id="hId-93-4d8"/>
+                        <segue destination="Jqr-2Q-fVw" kind="relationship" relationship="viewControllers" id="hId-93-4d8"/>
                         <segue destination="O31-11-ANn" kind="relationship" relationship="viewControllers" id="PvD-yq-aEB"/>
                         <segue destination="1Gm-WP-5yE" kind="relationship" relationship="viewControllers" id="H2m-2S-th6"/>
                     </connections>
@@ -317,7 +320,6 @@
         <!--Navigation Controller-->
         <scene sceneID="VV1-ID-T8c">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="YNt-I3-Bh7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1Gm-WP-5yE" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" selectedImage="icons8-dumbbell-36.png" id="Nn2-eP-K9e"/>
                     <toolbarItems/>
@@ -330,8 +332,30 @@
                         <segue destination="bzP-KD-9a9" kind="relationship" relationship="rootViewController" id="6BN-tK-uqP"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YNt-I3-Bh7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-20.289855072463769" y="755.35714285714278"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Vd2-Oe-1qp">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Jqr-2Q-fVw" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" selectedImage="icons8-ios-filled-excercise-small.png" id="ySW-un-eQE">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bLc-DQ-ca2">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="0Ne-g8-el9" kind="relationship" relationship="rootViewController" id="4AK-J8-AX6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uOZ-J3-vvM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="747.82608695652175" y="-625.44642857142856"/>
         </scene>
     </scenes>
     <resources>

@@ -23,7 +23,10 @@ class ExcerciseDetailViewController: UIViewController {
     @IBOutlet weak var explanationLBL:UILabel!
     @IBOutlet weak var exerciseIV:UIImageView!
     
-    
+    override func viewWillAppear(_ animated: Bool) {
+        exerciseName.text = exercise.name.uppercased()
+        explanationLBL.text = exercise.explanation
+    }
     
     
     /*

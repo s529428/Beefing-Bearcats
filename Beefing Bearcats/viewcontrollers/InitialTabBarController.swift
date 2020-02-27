@@ -1,26 +1,21 @@
 //
-//  HomeViewController.swift
+//  InitialTabBarController.swift
 //  Beefing Bearcats
 //
-//  Created by Caroline Finnerty on 2/23/20.
+//  Created by student on 2/27/20.
 //  Copyright © 2020 Finnerty,Caroline A. All rights reserved.
 //
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class InitialTabBarController: UITabBarController {
 
-    required init?(coder: NSCoder)
-    {
-        super.init(coder: coder)
-        self.tabBarItem.image = UIImage(named: "icons8-ios-filled-36.png")
-    }
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tabBarItem.image = UIImage(named: "icons8-ios-filled-36.png")
-
-        
-
+        self.tabBarItem.image = UIImage(named: "icons8-dumbbell-36.png")
+        self.tabBarItem.image = UIImage(named: "icons8-ios-filled-36.png")
+        self.tabBarItem.image = UIImage(named: "icons8-ios-filled-36.png")
         // Do any additional setup after loading the view.
     }
     

@@ -10,9 +10,17 @@ import UIKit
 
 class RecordsTableViewController: UITableViewController {
 
+    var records=Records.shared
+    required init?(coder: NSCoder)
+    {
+        super.init(coder: coder)
+        self.tabBarItem.image = UIImage(named: "icons8-trophy-36.png")
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tabBarItem.image = UIImage(named: "icons8-trophy-36.png")
+        print("loading records")
+        navigationItem.title="Records demo"
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Add", style: .done, target: self, action: #selector(add))
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -30,12 +38,47 @@ class RecordsTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 1
+        return records.numberOfRecords()
     }
+    let d:CGFloat = 300
 
-    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return d
+    }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "recordCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "record", for: indexPath)
+        if let record=Records.shared[indexPath.row]
+        {
+            let nameLBL = cell.viewWithTag(10) as! UILabel
+            let repitationTF = cell.viewWithTag(100) as! UITextField
+            let setsTF = cell.viewWithTag(200) as! UITextField
+            let weightTF = cell.viewWithTag(300) as! UITextField
+            nameLBL.text = record.name
+            
+            repitationTF.text=String(record.repitations)
+            setsTF.text=String(record.Sets)
+            weightTF.text=String(record.weight)
+            
+            
+        }
+
+        
+        //cell.textLabel!.text = restaurents.getRestaurant(at: indexPath.row)?.name
+        
+        
+        // Configure the cell...
+
+        return cell
+    }
+    
+    @IBAction func EditRecordInformation(_ sender: Any) {
+        
+    }
+    /*
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+
+        // Configure the cell...
 
         return cell
     }

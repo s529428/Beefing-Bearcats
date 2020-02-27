@@ -151,16 +151,41 @@
                     <view key="view" contentMode="scaleToFill" id="lT0-dh-n6H">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Skl-Jq-45K">
+                                <rect key="frame" x="50" y="188" width="65" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Front"/>
+                                <connections>
+                                    <action selector="clickMefrontWithSender:" destination="k4v-pD-2Va" eventType="touchUpInside" id="J6k-7J-MKq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NgY-PW-Etv">
+                                <rect key="frame" x="179" y="188" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="clickMebackWithSender:" destination="k4v-pD-2Va" eventType="touchUpInside" id="BJh-Q3-Tle"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ia2-Uh-rPe">
+                                <rect key="frame" x="71" y="250" width="240" height="503"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="MTL-kZ-HlZ"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" selectedImage="icons8-ios-filled-36.png" id="DvB-yY-bpq">
                         <color key="badgeColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBarItem>
+                    <connections>
+                        <outlet property="front" destination="Ia2-Uh-rPe" id="Uxy-0d-slF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XVF-u1-KYn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="748" y="49"/>
+            <point key="canvasLocation" x="747.82608695652175" y="48.883928571428569"/>
         </scene>
         <!--Plans Table View Controller-->
         <scene sceneID="D7r-ri-H3O">
@@ -317,7 +342,6 @@
         <!--Navigation Controller-->
         <scene sceneID="VV1-ID-T8c">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="YNt-I3-Bh7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1Gm-WP-5yE" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" selectedImage="icons8-dumbbell-36.png" id="Nn2-eP-K9e"/>
                     <toolbarItems/>
@@ -330,6 +354,7 @@
                         <segue destination="bzP-KD-9a9" kind="relationship" relationship="rootViewController" id="6BN-tK-uqP"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YNt-I3-Bh7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-20.289855072463769" y="755.35714285714278"/>
         </scene>

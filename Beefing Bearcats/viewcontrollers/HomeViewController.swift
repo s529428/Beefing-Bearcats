@@ -9,6 +9,23 @@
 import UIKit
 
 class HomeViewController: UIViewController {
+    
+    @IBOutlet weak var front:UIImageView!
+    @IBAction func clickMefront(sender:UIButton)
+    {
+        if let path1 = Bundle.main.path(forResource: "Front", ofType: ".png")
+        {
+            front.image=UIImage(contentsOfFile: path1)
+        }
+    }
+    
+    @IBAction func clickMeback(sender:UIButton){
+        if let path2 = Bundle.main.path(forResource: "Back", ofType: ".png")
+        {
+            front.image=UIImage(contentsOfFile: path2)
+        }
+    }
+    
 
     required init?(coder: NSCoder)
     {
@@ -18,7 +35,10 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tabBarItem.image = UIImage(named: "icons8-ios-filled-36.png")
-
+        if let path1 = Bundle.main.path(forResource: "Front", ofType: ".png")
+        {
+            front.image=UIImage(contentsOfFile: path1)
+        }
         
 
         // Do any additional setup after loading the view.

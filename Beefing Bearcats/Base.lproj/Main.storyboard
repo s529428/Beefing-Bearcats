@@ -286,9 +286,9 @@
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
                                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S6B-NC-51b">
-                                            <rect key="frame" x="311" y="236" width="34" height="30"/>
+                                            <rect key="frame" x="313" y="236" width="30" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <state key="normal" title="Save"/>
+                                            <state key="normal" title="Edit"/>
                                             <connections>
                                                 <action selector="EditRecordInformation:" destination="O31-11-ANn" eventType="touchUpInside" id="met-Io-VrO"/>
                                             </connections>

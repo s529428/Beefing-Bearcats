@@ -234,7 +234,7 @@
                             <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <items>
-                                <navigationItem title="Records" id="SQq-oz-dVe"/>
+                                <navigationItem title="Records" id="qKx-mb-Hkj"/>
                             </items>
                         </navigationBar>
                         <prototypes>

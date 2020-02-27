@@ -11,10 +11,14 @@ import UIKit
 class RecordsTableViewController: UITableViewController {
 
     var records=Records.shared
-    
+    required init?(coder: NSCoder)
+    {
+        super.init(coder: coder)
+        self.tabBarItem.image = UIImage(named: "icons8-trophy-36.png")
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tabBarItem.image = UIImage(named: "icons8-trophy-36.png")
+        
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false

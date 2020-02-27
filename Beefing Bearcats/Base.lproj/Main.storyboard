@@ -317,6 +317,7 @@
         <!--Navigation Controller-->
         <scene sceneID="VV1-ID-T8c">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YNt-I3-Bh7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1Gm-WP-5yE" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" selectedImage="icons8-dumbbell-36.png" id="Nn2-eP-K9e"/>
                     <toolbarItems/>
@@ -329,7 +330,6 @@
                         <segue destination="bzP-KD-9a9" kind="relationship" relationship="rootViewController" id="6BN-tK-uqP"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="YNt-I3-Bh7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-20.289855072463769" y="755.35714285714278"/>
         </scene>

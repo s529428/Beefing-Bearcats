@@ -11,12 +11,16 @@ import UIKit
 class ExcersiceTableViewController: UITableViewController {
     
 
+    required init?(coder: NSCoder)
+       {
+           super.init(coder: coder)
+           self.tabBarItem.image = UIImage(named: "icons8-ios-filled-excercise-small.png")
+           navigationItem.title = "EXCERSICES"
+       }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tabBarItem.image = UIImage(named: "icons8-ios-filled-excercise-small.png")
         
-        navigationItem.title = "EXCERSICES"
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 

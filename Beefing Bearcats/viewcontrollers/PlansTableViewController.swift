@@ -13,10 +13,14 @@ class PlansTableViewController: UITableViewController {
     @IBOutlet weak var plansTV: UITableView!
     
     let planArray = ["Plan One","Plan Two","Plan Three"]
-    
+    required init?(coder: NSCoder)
+    {
+        super.init(coder: coder)
+        self.tabBarItem.image = UIImage(named: "icons8-dumbbell-36.png")
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tabBarItem.image = UIImage(named: "icons8-dumbbell-36.png")
+        
         
         plansTV.dataSource = self
         plansTV.delegate = self

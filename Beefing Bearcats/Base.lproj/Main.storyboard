@@ -140,7 +140,7 @@
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="k4v-pD-2Va" kind="relationship" relationship="viewControllers" id="8Qj-DA-JVo"/>
+                        <segue destination="pNt-NP-bEv" kind="relationship" relationship="viewControllers" id="8Qj-DA-JVo"/>
                         <segue destination="Jqr-2Q-fVw" kind="relationship" relationship="viewControllers" id="hId-93-4d8"/>
                         <segue destination="O31-11-ANn" kind="relationship" relationship="viewControllers" id="PvD-yq-aEB"/>
                         <segue destination="1Gm-WP-5yE" kind="relationship" relationship="viewControllers" id="H2m-2S-th6"/>
@@ -167,7 +167,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NgY-PW-Etv">
-                                <rect key="frame" x="179" y="188" width="34" height="30"/>
+                                <rect key="frame" x="161" y="188" width="52" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
@@ -178,20 +178,23 @@
                                 <rect key="frame" x="71" y="250" width="240" height="503"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wbc-Zf-t7n">
+                                <rect key="frame" x="269" y="188" width="58" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Exercise"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="MTL-kZ-HlZ"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" selectedImage="icons8-ios-filled-36.png" id="DvB-yY-bpq">
-                        <color key="badgeColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </tabBarItem>
+                    <navigationItem key="navigationItem" id="new-oP-jRX"/>
                     <connections>
                         <outlet property="front" destination="Ia2-Uh-rPe" id="Uxy-0d-slF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XVF-u1-KYn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="747.82608695652175" y="48.883928571428569"/>
+            <point key="canvasLocation" x="1657.9710144927537" y="48.883928571428569"/>
         </scene>
         <!--Plans Table View Controller-->
         <scene sceneID="D7r-ri-H3O">
@@ -384,6 +387,27 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uOZ-J3-vvM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="747.82608695652175" y="-625.44642857142856"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Eg4-87-lFd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pNt-NP-bEv" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" selectedImage="icons8-ios-filled-36.png" id="DvB-yY-bpq">
+                        <color key="badgeColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YGc-cr-Nfm">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="k4v-pD-2Va" kind="relationship" relationship="rootViewController" id="Hqp-hf-qyS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PPY-Ik-Ca3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="747.82608695652175" y="48.883928571428569"/>
         </scene>
     </scenes>
     <resources>

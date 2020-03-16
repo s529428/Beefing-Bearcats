@@ -19,9 +19,9 @@ class RecordsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         print("loading records")
-        navigationItem.title="Records demo"
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Add", style: .done, target: self, action: #selector(add))
-
+        navigationItem.title="Records"
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Add Record", style: .done, target: self, action: #selector(addRecord))
+        NotificationCenter.default.addObserver(self, selector: #selector(recordAdded(notification:)), name: NSNotification.Name(rawValue:"Added Record"), object: nil)
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -31,6 +31,17 @@ class RecordsTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
+    @objc func addRecord(){
+         // Instantiate AddNewRestaurantVC
+             let addNewPlanVC = storyboard?.instantiateViewController(withIdentifier: "AddNewRecord") as! AddNewRecordViewController
+             // addNewRestaurantVC.modalPresentationStyle = .fullScreen
+         // Present it
+             self.present(addNewPlanVC, animated: true, completion: nil)
+         }
+    @objc func recordAdded(notification:Notification){
+       //  print(Restaurants.shared.numRestaurants())
+        tableView.reloadData()
+    }
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
@@ -67,12 +78,14 @@ class RecordsTableViewController: UITableViewController {
         
         
         // Configure the cell...
-
+        
         return cell
     }
     
     @IBAction func EditRecordInformation(_ sender: Any) {
-        
+        let cell=tableView.dequeueReusableCell(withIdentifier: "record")
+        let weightTF = cell?.viewWithTag(100) as! UITextField
+        print(weightTF.text!)
     }
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

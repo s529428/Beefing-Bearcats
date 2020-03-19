@@ -13,6 +13,8 @@
 		3F70157124047F5700D21493 /* PlansDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F70157024047F5700D21493 /* PlansDetailTableViewController.swift */; };
 		3F71129424088B230015E8EB /* Back11.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F71129324088B230015E8EB /* Back11.png */; };
 		3F71129624088B300015E8EB /* Front11.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F71129524088B300015E8EB /* Front11.png */; };
+		3F71135A242168EC0015E8EB /* MuscleListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F711359242168EC0015E8EB /* MuscleListTableViewController.swift */; };
+		3F71135C24216D680015E8EB /* MuscleGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F71135B24216D680015E8EB /* MuscleGroup.swift */; };
 		521F9D8D240375F400806B38 /* ExcersiceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521F9D8C240375F400806B38 /* ExcersiceTableViewController.swift */; };
 		521F9D97240379AD00806B38 /* icons8-ios-filled-excercise-small.png in Resources */ = {isa = PBXBuildFile; fileRef = 521F9D96240379AD00806B38 /* icons8-ios-filled-excercise-small.png */; };
 		521F9D9924037A1F00806B38 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521F9D9824037A1F00806B38 /* HomeViewController.swift */; };
@@ -37,6 +39,8 @@
 		3F70157024047F5700D21493 /* PlansDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlansDetailTableViewController.swift; sourceTree = "<group>"; };
 		3F71129324088B230015E8EB /* Back11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Back11.png; sourceTree = "<group>"; };
 		3F71129524088B300015E8EB /* Front11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Front11.png; sourceTree = "<group>"; };
+		3F711359242168EC0015E8EB /* MuscleListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuscleListTableViewController.swift; sourceTree = "<group>"; };
+		3F71135B24216D680015E8EB /* MuscleGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuscleGroup.swift; sourceTree = "<group>"; };
 		521F9D8C240375F400806B38 /* ExcersiceTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcersiceTableViewController.swift; sourceTree = "<group>"; };
 		521F9D96240379AD00806B38 /* icons8-ios-filled-excercise-small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-ios-filled-excercise-small.png"; sourceTree = "<group>"; };
 		521F9D9824037A1F00806B38 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +83,8 @@
 				3F4D6B102407936B00B2AB47 /* Records.swift */,
 				3F4D6B142407A80000B2AB47 /* RecordAddition.swift */,
 				3F4D6BD6241F4D9800B2AB47 /* AddNewRecordViewController.swift */,
+				3F711359242168EC0015E8EB /* MuscleListTableViewController.swift */,
+				3F71135B24216D680015E8EB /* MuscleGroup.swift */,
 			);
 			path = viewcontrollers;
 			sourceTree = "<group>";
@@ -208,9 +214,11 @@
 				B0EBAED823FEE41200AB2590 /* AppDelegate.swift in Sources */,
 				B0EBAEDA23FEE41200AB2590 /* SceneDelegate.swift in Sources */,
 				521F9D8D240375F400806B38 /* ExcersiceTableViewController.swift in Sources */,
+				3F71135A242168EC0015E8EB /* MuscleListTableViewController.swift in Sources */,
 				3F4D6B112407936B00B2AB47 /* Records.swift in Sources */,
 				521F9DD02405D82100806B38 /* ExcerciseDetailViewController.swift in Sources */,
 				521F9D9924037A1F00806B38 /* HomeViewController.swift in Sources */,
+				3F71135C24216D680015E8EB /* MuscleGroup.swift in Sources */,
 				521F9DD22407373800806B38 /* Excersice.swift in Sources */,
 				3F4D6B152407A80000B2AB47 /* RecordAddition.swift in Sources */,
 				3F4D6BD7241F4D9800B2AB47 /* AddNewRecordViewController.swift in Sources */,

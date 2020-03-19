@@ -26,6 +26,15 @@ class HomeViewController: UIViewController {
         }
     }
     
+    
+    @IBAction func muscleList(_ sender: AnyObject) {
+//        let muscleList = storyboard?.instantiateViewController(withIdentifier: "AddNewRecord") as! AddNewRecordViewController
+//        self.navigationController!.pushViewController(muscleList, animated: true)
+        
+        let muscleTVC = storyboard?.instantiateViewController(withIdentifier: "MuscleListNC") as! MuscleListTableViewController
+        self.navigationController!.pushViewController(muscleTVC, animated: true)
+    }
+    
 
     required init?(coder: NSCoder)
     {

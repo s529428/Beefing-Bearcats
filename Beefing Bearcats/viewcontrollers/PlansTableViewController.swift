@@ -12,7 +12,14 @@ class PlansTableViewController: UITableViewController {
 
     @IBOutlet weak var plansTV: UITableView!
     
-    let planArray = ["Plan One","Plan Two","Plan Three"]
+    let planArray = ["Biceps",
+    "Triceps",
+    "Chest",
+    "Legs",
+    "Back",
+    "Shoulder",
+    "Cardio",
+    "Abs"]
     required init?(coder: NSCoder)
     {
         super.init(coder: coder)
@@ -20,7 +27,6 @@ class PlansTableViewController: UITableViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         
         plansTV.dataSource = self
         plansTV.delegate = self
@@ -43,5 +49,12 @@ class PlansTableViewController: UITableViewController {
         cell.textLabel!.text = planArray[indexPath.row]
 
         return cell
+    }
+    
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let selectPlanVC = storyboard?.instantiateViewController(withIdentifier: "SelectPlanViewController") as! SelectPlanViewController
+        selectPlanVC.plan = Plans.shared.getPlan(indexPath.row)
+        navigationController?.pushViewController(selectPlanVC, animated: true)
     }
 }

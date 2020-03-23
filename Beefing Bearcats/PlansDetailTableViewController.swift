@@ -12,7 +12,14 @@ class PlansDetailTableViewController: UIViewController, UITableViewDelegate, UIT
     
     @IBOutlet weak var PlansTV: UITableView!
     
-    let plansArray = ["Plan One","Plan Two","Plan Three"]
+    let plansArray = ["Biceps",
+                      "Triceps",
+                      "Chest",
+                      "Legs",
+                      "Back",
+                      "Shoulder",
+                      "Cardio",
+                      "Abs"]
     
     
     

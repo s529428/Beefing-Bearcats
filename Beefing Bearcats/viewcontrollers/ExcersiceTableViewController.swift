@@ -113,6 +113,12 @@ class ExcersiceTableViewController: UITableViewController {
         excersiceDetailVC.exercise = Exercises.shared.getExercise(indexPath.row)
         navigationController?.pushViewController(excersiceDetailVC, animated: true)
     }
+    
+    @objc func addRecord(){
+        //AddNewRecord View controller called up
+        let addNewRecordVC = storyboard?.instantiateViewController(withIdentifier: "AddNewRecord") as! AddNewRecordViewController
+        self.present(addNewRecordVC, animated: true, completion: nil)
+    }
 
 
 }

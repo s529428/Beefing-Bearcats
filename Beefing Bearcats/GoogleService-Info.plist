@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1055218113178-ke2u87u10k4tf7q1k3e5tc4tq5ac2so6.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1055218113178-ke2u87u10k4tf7q1k3e5tc4tq5ac2so6</string>
+	<key>API_KEY</key>
+	<string>AIzaSyACy6AcLTPriNhWtlArmYoL0XbTv1DkNBY</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1055218113178</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>edu.nwmissouri.Beefing-Bearcats</string>
+	<key>PROJECT_ID</key>
+	<string>beafingbearcats</string>
+	<key>STORAGE_BUCKET</key>
+	<string>beafingbearcats.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1055218113178:ios:d3cd0c02f9c9281ca81d23</string>
+	<key>DATABASE_URL</key>
+	<string>https://beafingbearcats.firebaseio.com</string>
+</dict>
+</plist>

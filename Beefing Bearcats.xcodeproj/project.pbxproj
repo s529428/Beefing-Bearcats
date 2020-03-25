@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F16AF6E242BF686009A515D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3F16AF6D242BF686009A515D /* GoogleService-Info.plist */; };
 		3F4D6B112407936B00B2AB47 /* Records.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4D6B102407936B00B2AB47 /* Records.swift */; };
 		3F4D6B152407A80000B2AB47 /* RecordAddition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4D6B142407A80000B2AB47 /* RecordAddition.swift */; };
 		3F4D6BD7241F4D9800B2AB47 /* AddNewRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4D6BD6241F4D9800B2AB47 /* AddNewRecordViewController.swift */; };
@@ -27,6 +28,7 @@
 		521F9DA524037D5900806B38 /* PlansTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521F9DA424037D5900806B38 /* PlansTableViewController.swift */; };
 		521F9DD02405D82100806B38 /* ExcerciseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521F9DCF2405D82100806B38 /* ExcerciseDetailViewController.swift */; };
 		521F9DD22407373800806B38 /* Excersice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521F9DD12407373800806B38 /* Excersice.swift */; };
+		67FBAC1786EFBA2AE76B808D /* Pods_Beefing_Bearcats.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E0BBEEDF505B01C7DD0F8F7 /* Pods_Beefing_Bearcats.framework */; };
 		B0EBAED823FEE41200AB2590 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EBAED723FEE41200AB2590 /* AppDelegate.swift */; };
 		B0EBAEDA23FEE41200AB2590 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EBAED923FEE41200AB2590 /* SceneDelegate.swift */; };
 		B0EBAEE123FEE41200AB2590 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0EBAEDF23FEE41200AB2590 /* Main.storyboard */; };
@@ -35,6 +37,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		12857C3983BE46A2533F191D /* Pods-Beefing Bearcats.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beefing Bearcats.debug.xcconfig"; path = "Target Support Files/Pods-Beefing Bearcats/Pods-Beefing Bearcats.debug.xcconfig"; sourceTree = "<group>"; };
+		1BA924750EAADA2B02EE2C6D /* Pods-Beefing Bearcats.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beefing Bearcats.release.xcconfig"; path = "Target Support Files/Pods-Beefing Bearcats/Pods-Beefing Bearcats.release.xcconfig"; sourceTree = "<group>"; };
+		2E0BBEEDF505B01C7DD0F8F7 /* Pods_Beefing_Bearcats.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Beefing_Bearcats.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F16AF6D242BF686009A515D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3F4D6B102407936B00B2AB47 /* Records.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Records.swift; sourceTree = "<group>"; };
 		3F4D6B142407A80000B2AB47 /* RecordAddition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordAddition.swift; sourceTree = "<group>"; };
 		3F4D6BD6241F4D9800B2AB47 /* AddNewRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewRecordViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67FBAC1786EFBA2AE76B808D /* Pods_Beefing_Bearcats.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +102,16 @@
 			path = viewcontrollers;
 			sourceTree = "<group>";
 		};
+		790261B8443B6129CFEAE0A5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				12857C3983BE46A2533F191D /* Pods-Beefing Bearcats.debug.xcconfig */,
+				1BA924750EAADA2B02EE2C6D /* Pods-Beefing Bearcats.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		B07624632405790C005AD52A /* Icons */ = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +130,8 @@
 			children = (
 				B0EBAED623FEE41200AB2590 /* Beefing Bearcats */,
 				B0EBAED523FEE41200AB2590 /* Products */,
+				790261B8443B6129CFEAE0A5 /* Pods */,
+				D6AE32EC80EC1EB270F22A36 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -136,8 +155,17 @@
 				B0EBAEE223FEE41300AB2590 /* Assets.xcassets */,
 				B0EBAEE423FEE41300AB2590 /* LaunchScreen.storyboard */,
 				B0EBAEE723FEE41300AB2590 /* Info.plist */,
+				3F16AF6D242BF686009A515D /* GoogleService-Info.plist */,
 			);
 			path = "Beefing Bearcats";
+			sourceTree = "<group>";
+		};
+		D6AE32EC80EC1EB270F22A36 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2E0BBEEDF505B01C7DD0F8F7 /* Pods_Beefing_Bearcats.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,9 +175,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B0EBAEEA23FEE41300AB2590 /* Build configuration list for PBXNativeTarget "Beefing Bearcats" */;
 			buildPhases = (
+				459C3916B28FEA3F44E0DAEC /* [CP] Check Pods Manifest.lock */,
 				B0EBAED023FEE41200AB2590 /* Sources */,
 				B0EBAED123FEE41200AB2590 /* Frameworks */,
 				B0EBAED223FEE41200AB2590 /* Resources */,
+				80A934288FCD17CB5038DF15 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -205,12 +235,55 @@
 				B0EBAEE323FEE41300AB2590 /* Assets.xcassets in Resources */,
 				B0EBAEE123FEE41200AB2590 /* Main.storyboard in Resources */,
 				521F9D9B24037AC500806B38 /* icons8-trophy-36.png in Resources */,
+				3F16AF6E242BF686009A515D /* GoogleService-Info.plist in Resources */,
 				521F9D97240379AD00806B38 /* icons8-ios-filled-excercise-small.png in Resources */,
 				521F9D9F24037B1000806B38 /* icons8-ios-filled-36.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		459C3916B28FEA3F44E0DAEC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Beefing Bearcats-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		80A934288FCD17CB5038DF15 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Beefing Bearcats/Pods-Beefing Bearcats-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Beefing Bearcats/Pods-Beefing Bearcats-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Beefing Bearcats/Pods-Beefing Bearcats-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B0EBAED023FEE41200AB2590 /* Sources */ = {
@@ -374,6 +447,7 @@
 		};
 		B0EBAEEB23FEE41300AB2590 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12857C3983BE46A2533F191D /* Pods-Beefing Bearcats.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -391,6 +465,7 @@
 		};
 		B0EBAEEC23FEE41300AB2590 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BA924750EAADA2B02EE2C6D /* Pods-Beefing Bearcats.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

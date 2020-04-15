@@ -8,5 +8,6 @@ target 'Beefing Bearcats' do
   # Pods for Beefing Bearcats
 	pod 'Firebase/Core'
     pod 'Firebase/Database'
+pod 'Firebase/Firestore'
 
 end

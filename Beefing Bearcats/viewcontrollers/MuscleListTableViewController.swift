@@ -7,21 +7,36 @@
 //
 
 import UIKit
+import FirebaseFirestore
+import Firebase
 
 class MuscleListTableViewController: UITableViewController {
     
-    let muscleListArray = ["Chest",
-    "Shoulders",
-    "lats",
-    "Legs",
-    "Biceps",
-    "Triceps",
-    "Cardio",
-    "Abs"]
+    
+    
+    var muscleListArray:[String] = []
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+    //    let db  = Firestore.firestore()
+        let db = Firestore.firestore()
+        
+        let muscleListArraydb = db.collection("MuscleExercises").getDocuments { (snapshot, error) in
+            if error == nil && snapshot != nil{
+                for document in snapshot!.documents{
+                   // let documentData = document.data()
+                  //  print(documentData)
+                    print(document.documentID)
+                    self.muscleListArray.append(document.documentID)
+                    self.tableView.reloadData()
+                }
+            }
+        }
+       
+       
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -38,6 +53,7 @@ class MuscleListTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
+        print(muscleListArray.count)
         return muscleListArray.count
     }
 
@@ -53,6 +69,32 @@ class MuscleListTableViewController: UITableViewController {
     }
     
 
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let muscleDetailVC = storyboard?.instantiateViewController(withIdentifier: "FilteredMuscleVC") as! FilteredListTableViewController
+       // excersiceDetailVC.exercise = Exercises.shared.getExercise(indexPath.row)
+        
+       // ref = Database.database().reference()
+        
+        
+        
+        // Retrieve the posts and listen for changes
+        //databaseHandle = ref?.child("Posts").observe(.childAdded, with: { (snapshot) in
+            // Code to execute when a child is added under "posts"
+            // Take the value from the snapshot and add it to the PostData array
+            
+          //  let post = snapshot.value as? String
+            
+           // muscleDetailVC.messageTextView.text = self.postData[indexPath.row]
+            
+        //    }
+        
+      //  )
+        
+        
+        navigationController?.pushViewController(muscleDetailVC, animated: true)
+        
+    }
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -72,6 +114,7 @@ class MuscleListTableViewController: UITableViewController {
         }    
     }
     */
+    
 
     /*
     // Override to support rearranging the table view.

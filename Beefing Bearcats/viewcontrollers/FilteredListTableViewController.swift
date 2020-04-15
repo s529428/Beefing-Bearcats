@@ -14,23 +14,7 @@ class FilteredListTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let db = Firestore.firestore()
-        
-        db.collection("MuscleExercises").document("Chest").getDocument { (document, error) in
-            // Check  for error
-            
-            let muscleListArraydb = db.collection("MuscleExercises").getDocuments { (snapshot, error) in
-            if error == nil && snapshot != nil{
-                for document in snapshot!.documents{
-                   // let documentData = document.data()
-                  //  print(documentData)
-                    print(document.documentID)
-                    self.muscleListArray.append(document.documentID)
-                    self.tableView.reloadData()
-                }
-            }
-        }
+
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 

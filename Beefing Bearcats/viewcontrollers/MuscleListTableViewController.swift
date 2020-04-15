@@ -53,7 +53,7 @@ class MuscleListTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        print(muscleListArray.count)
+        //print(muscleListArray.count)
         return muscleListArray.count
     }
 

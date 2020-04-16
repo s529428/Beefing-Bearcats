@@ -84,7 +84,7 @@ class MuscleListTableViewController: UITableViewController {
             
           //  let post = snapshot.value as? String
             
-           // muscleDetailVC.messageTextView.text = self.postData[indexPath.row]
+            muscleDetailVC.exercisesMuscle = muscleListArray[indexPath.row]
             
         //    }
         

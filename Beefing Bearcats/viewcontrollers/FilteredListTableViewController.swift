@@ -11,9 +11,31 @@ import Firebase
 import FirebaseFirestore
 
 class FilteredListTableViewController: UITableViewController {
-
+    
+    var exercisesMuscle:String = ""
+    var exerciseDesc:[String:Any] = [:]
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let db = Firestore.firestore()
+        
+        let muscleListArraydb = db.collection("MuscleExercises").getDocuments { (snapshot, error) in
+            if error == nil && snapshot != nil{
+                for document in snapshot!.documents{
+                    if document.documentID == self.exercisesMuscle{
+                        for field in document.data(){
+                            self.exerciseDesc[field.key] = field.value
+                            print(field.key)
+                            print(field.value)
+                            self.tableView.reloadData()
+                        }
+                }
+            }
+        }
+        }
+        
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -26,23 +48,28 @@ class FilteredListTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return self.exerciseDesc.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ExerciseDetails", for: indexPath)
 
-        // Configure the cell...
+        //if let
+        let exercisenameLBL = cell.viewWithTag(10) as! UILabel
+        let exerciseDetailLbL = cell.viewWithTag(20) as! UILabel
+        print(indexPath.row)
+       // exercisenameLBL = self.exerciseDesc[indexPath.row].key
+        
 
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.

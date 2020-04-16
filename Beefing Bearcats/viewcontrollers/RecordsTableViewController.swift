@@ -83,11 +83,7 @@ class RecordsTableViewController: UITableViewController {
         return cell
     }
     
-    @IBAction func EditRecordInformation(_ sender: Any) {
-        let cell=tableView.dequeueReusableCell(withIdentifier: "record")
-        let weightTF = cell?.viewWithTag(100) as! UITextField
-        print(weightTF.text!)
-    }
+
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)

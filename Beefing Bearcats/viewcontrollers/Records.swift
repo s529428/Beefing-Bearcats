@@ -7,6 +7,8 @@
 //
 
 import Foundation
+import FirebaseFirestore
+import Firebase
 struct Record {
     var name:String
     var repitations:Int
@@ -18,7 +20,7 @@ struct Record {
 class Records {
     
     private static var _shared:Records! // Only visible in this struct
-    
+    var rec:[String:Any] = [:]
     static var shared:Records {         // To access this anywhere, in the app just write Restaurants.shared
         if _shared == nil {
             _shared = Records()
@@ -26,15 +28,58 @@ class Records {
         return _shared
     }
     
-    private var records:[Record] = [ Record(name:"Goblet Squat",repitations: 10,Sets: 5,weight: 30),
-                                         Record(name:"Dumbbell Clean",repitations: 10,Sets: 5,weight: 20),
-        Record(name:"Farmers’ Walk",repitations: 10,Sets: 5,weight: 40),
-        Record(name:"Bent-Over Row",repitations: 5,Sets: 3,weight: 20),
-        Record(name:"One Arm Swing",repitations: 10,Sets: 3,weight: 15),
-        Record(name:"Dumbbell Bench Press",repitations: 10,Sets: 2,weight: 40)
+    private var records:[Record] = [
+//        Record(name:"Goblet Squat",repitations: 10,Sets: 5,weight: 30),
+//                                         Record(name:"Dumbbell Clean",repitations: 10,Sets: 5,weight: 20),
+//        Record(name:"Farmers’ Walk",repitations: 10,Sets: 5,weight: 40),
+//        Record(name:"Bent-Over Row",repitations: 5,Sets: 3,weight: 20),
+//        Record(name:"One Arm Swing",repitations: 10,Sets: 3,weight: 15),
+//        Record(name:"Dumbbell Bench Press",repitations: 10,Sets: 2,weight: 40)
     ]
     
     private init(){                         // We can't make another Restaurants instance, which is a Good Thing: we only want 1 model
+        let db = Firestore.firestore()
+        
+        let RecordsArraydb = db.collection("Records").getDocuments { (snapshot, error) in
+            if error == nil && snapshot != nil{
+                for document in snapshot!.documents{
+                   // let documentData = document.data()
+                  //  print(documentData)
+                 
+                    var demo=document.data().keys
+                    var name1:String="";
+                    var repitition1:Int=0;
+                    var Sets1:Int=0;
+                    var weight1:Double=0.0;
+                    for feild in document.data(){
+                    
+                        print(feild.key)
+                        if feild.key=="name"
+                        {
+                            name1="\(feild.value)"
+                        }
+                        if feild.key=="repitations"
+                        {
+                            repitition1=Int("\(feild.value)")!
+                        }
+                        if feild.key=="sets"
+                        {
+                            Sets1=Int("\(feild.value)")!
+                        }
+                        if feild.key=="weight"
+                        {
+                            weight1=Double("\(feild.value)")!
+                        }
+                    }
+                    print(document.data().values)
+                    let r=Record(name:name1,repitations: repitition1,Sets: Sets1,weight: weight1)
+                    print("new Record")
+                    print(r)
+                    self.records.append(r)
+                }
+            }
+        }
+        
     }
     
     /// returns the number of restaurents

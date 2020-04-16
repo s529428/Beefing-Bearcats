@@ -14,6 +14,8 @@ class FilteredListTableViewController: UITableViewController {
     
     var exercisesMuscle:String = ""
     var exerciseDesc:[String:Any] = [:]
+    var exerciseArray:[String] = []
+    var exerciseHow:[String] = []
     
     
     override func viewDidLoad() {
@@ -30,6 +32,9 @@ class FilteredListTableViewController: UITableViewController {
                             print(field.key)
                             print(field.value)
                             self.tableView.reloadData()
+                            
+                            self.exerciseArray.append(field.key)
+                            self.exerciseHow.append("\(field.value)")
                         }
                 }
             }
@@ -56,6 +61,9 @@ class FilteredListTableViewController: UITableViewController {
         return self.exerciseDesc.count
     }
 
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 300.0
+    }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ExerciseDetails", for: indexPath)
@@ -65,6 +73,8 @@ class FilteredListTableViewController: UITableViewController {
         let exerciseDetailLbL = cell.viewWithTag(20) as! UILabel
         print(indexPath.row)
        // exercisenameLBL = self.exerciseDesc[indexPath.row].key
+        exercisenameLBL.text = exerciseArray[indexPath.row]
+        exerciseDetailLbL.text = exerciseHow[indexPath.row]
         
 
         return cell

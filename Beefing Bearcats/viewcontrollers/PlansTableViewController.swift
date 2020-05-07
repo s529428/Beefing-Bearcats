@@ -12,12 +12,12 @@ class PlansTableViewController: UITableViewController {
     
     @IBOutlet weak var plansTV: UITableView!
     
-    let planArray = ["30 Days Action plan",
+    let planArray = ["10 Days Action plan",
+                     "30 Days Action plan",
                      "60 Days Action plan",
                      "120 Days Action plan",
-                     "365 Days Action plan",
-                     "5 Days Action plan",
-                     "10 Days Action plan"
+                     "210 Days Action plan",
+                     "365 Days Action plan"
     ]
     required init?(coder: NSCoder)
     {

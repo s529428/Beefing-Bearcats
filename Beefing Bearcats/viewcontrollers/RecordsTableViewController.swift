@@ -11,7 +11,6 @@ import UIKit
 
 // Display all the records present in the database in a table view controller.
 class RecordsTableViewController: UITableViewController {
-    
     var records=Records.shared
     
     required init?(coder: NSCoder)
@@ -19,7 +18,6 @@ class RecordsTableViewController: UITableViewController {
         super.init(coder: coder)
         self.tabBarItem.image = UIImage(named: "icons8-trophy-36.png")
     }
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,13 +37,14 @@ class RecordsTableViewController: UITableViewController {
     @objc func addRecord(){
         
         let addNewPlanVC = storyboard?.instantiateViewController(withIdentifier: "AddNewRecord") as! AddNewRecordViewController
-        
         self.present(addNewPlanVC, animated: true, completion: nil)
     }
+    
     @objc func recordAdded(notification:Notification){
         
         tableView.reloadData()
     }
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
@@ -73,15 +72,10 @@ class RecordsTableViewController: UITableViewController {
             let setsTF = cell.viewWithTag(200) as! UITextField
             let weightTF = cell.viewWithTag(300) as! UITextField
             nameLBL.text = record.name
-            
             repitationTF.text=String(record.repitations)
             setsTF.text=String(record.Sets)
             weightTF.text=String(record.weight)
-            
-            
         }
-        
-        
         return cell
     }
     

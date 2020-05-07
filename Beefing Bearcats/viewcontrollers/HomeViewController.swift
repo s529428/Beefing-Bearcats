@@ -66,7 +66,6 @@ class HomeViewController: UIViewController {
         self.present(ac, animated: true)
     }
     
-    
     /*
      // MARK: - Navigation
      

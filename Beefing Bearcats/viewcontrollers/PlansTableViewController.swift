@@ -27,7 +27,6 @@ class PlansTableViewController: UITableViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         plansTV.dataSource = self
         plansTV.delegate = self
     }
@@ -44,10 +43,7 @@ class PlansTableViewController: UITableViewController {
     //Configuring the cell details
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "PlansCell", for: indexPath)
-        
-        
         cell.textLabel!.text = planArray[indexPath.row]
-        
         return cell
     }
     

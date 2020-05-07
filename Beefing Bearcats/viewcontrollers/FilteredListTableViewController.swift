@@ -18,17 +18,13 @@ class FilteredListTableViewController: UITableViewController {
     var exerciseDesc:[String:Any] = [:]
     var exerciseArray:[String] = []
     var exerciseHow:[String] = []
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // firestore db is connected a constant in swift
         let db = Firestore.firestore()
         
-        
         // collection MuscleExercises from database is pulled.
-        
         _ = db.collection("MuscleExercises").getDocuments { (snapshot, error) in
             if error == nil && snapshot != nil{
                 for document in snapshot!.documents{

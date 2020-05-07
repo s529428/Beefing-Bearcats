@@ -12,15 +12,12 @@ import FirebaseFirestore
 import Firebase
 // Listing all muscles in table view controller.
 class MuscleListTableViewController: UITableViewController {
-
     var muscleListArray:[String] = []
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // firestore connection to the database is established
-        
         let db = Firestore.firestore()
         
         let muscleListArraydb = db.collection("MuscleExercises").getDocuments { (snapshot, error) in
@@ -59,10 +56,7 @@ class MuscleListTableViewController: UITableViewController {
     // Configure the table view cell
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "muscleGroupList", for: indexPath)
-        
         cell.textLabel!.text = muscleListArray[indexPath.row]
-        
-        
         return cell
     }
     
@@ -70,16 +64,8 @@ class MuscleListTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let muscleDetailVC = storyboard?.instantiateViewController(withIdentifier: "FilteredMuscleVC") as! FilteredListTableViewController
-        
         muscleDetailVC.exercisesMuscle = muscleListArray[indexPath.row]
-        
-        //    }
-        
-        //  )
-        
-        
         navigationController?.pushViewController(muscleDetailVC, animated: true)
-        
     }
     
     

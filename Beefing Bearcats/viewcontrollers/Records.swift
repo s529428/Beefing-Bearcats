@@ -45,15 +45,12 @@ class Records {
         let RecordsArraydb = db.collection("Records").getDocuments { (snapshot, error) in
             if error == nil && snapshot != nil{
                 for document in snapshot!.documents{
-                    
-                    
                     var name1:String="";
                     var repitition1:Int=0;
                     var Sets1:Int=0;
                     var weight1:Double=0.0;
                     for feild in document.data(){
-                        
-                        print(feild.key)
+                        // print(feild.key)
                         if feild.key=="name"
                         {
                             name1="\(feild.value)"
@@ -71,10 +68,10 @@ class Records {
                             weight1=Double("\(feild.value)")!
                         }
                     }
-                    print(document.data().values)
+                    //print(document.data().values)
                     let r=Record(name:name1,repitations: repitition1,Sets: Sets1,weight: weight1)
-                    print("new Record")
-                    print(r)
+                    //                    print("new Record")
+                    //                    print(r)
                     self.records.append(r)
                 }
             }
@@ -103,8 +100,8 @@ class Records {
         return index >= 0 && index < records.count ? records[index] : nil
     }
     
-   
-   //Adding a record to list of records
+    
+    //Adding a record to list of records
     func add(record:Record){
         records.append(record)
     }

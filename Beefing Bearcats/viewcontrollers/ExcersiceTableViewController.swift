@@ -52,14 +52,10 @@ class ExcersiceTableViewController: UITableViewController {
     // Seeting the cell details
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "excersiceDescription")!
-        
         let nameLBL = cell.viewWithTag(44) as! UILabel
         let explanationLBL = cell.viewWithTag(45) as! UILabel
-        
         nameLBL.text = Exercises.shared.getExercise(indexPath.row)!.name.uppercased()
         explanationLBL.text = Exercises.shared.getExercise(indexPath.row)!.explanation
-        
-        
         return cell
     }
     

@@ -10,7 +10,6 @@
 import UIKit
 //The class will define all the exercices present in the app.
 class ExcerciseDetailViewController: UIViewController {
-    
     var exercise:Exercise!
     
     override func viewDidLoad() {

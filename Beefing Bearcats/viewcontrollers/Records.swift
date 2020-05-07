@@ -46,7 +46,7 @@ class Records {
             if error == nil && snapshot != nil{
                 for document in snapshot!.documents{
                     
-                    var demo=document.data().keys
+                    
                     var name1:String="";
                     var repitition1:Int=0;
                     var Sets1:Int=0;

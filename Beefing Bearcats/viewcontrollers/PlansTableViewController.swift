@@ -9,15 +9,15 @@
 import UIKit
 
 class PlansTableViewController: UITableViewController {
-
+    
     @IBOutlet weak var plansTV: UITableView!
     
     let planArray = ["30 Days Action plan",
-    "60 Days Action plan",
-    "120 Days Action plan",
-    "365 Days Action plan",
-    "5 Days Action plan",
-    "10 Days Action plan"
+                     "60 Days Action plan",
+                     "120 Days Action plan",
+                     "365 Days Action plan",
+                     "5 Days Action plan",
+                     "10 Days Action plan"
     ]
     required init?(coder: NSCoder)
     {
@@ -30,23 +30,23 @@ class PlansTableViewController: UITableViewController {
         plansTV.dataSource = self
         plansTV.delegate = self
     }
-
-
+    
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return planArray.count
     }
-
+    
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "PlansCell", for: indexPath)
-
-      
+        
+        
         cell.textLabel!.text = planArray[indexPath.row]
-
+        
         return cell
     }
     

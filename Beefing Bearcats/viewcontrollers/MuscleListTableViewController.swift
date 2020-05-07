@@ -18,7 +18,7 @@ class MuscleListTableViewController: UITableViewController {
     var muscleListArray:[String] = []
     
     
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -29,43 +29,43 @@ class MuscleListTableViewController: UITableViewController {
         let muscleListArraydb = db.collection("MuscleExercises").getDocuments { (snapshot, error) in
             if error == nil && snapshot != nil{
                 for document in snapshot!.documents{
-                   // let documentData = document.data()
-                  //  print(documentData)
+                    // let documentData = document.data()
+                    //  print(documentData)
                     print(document.documentID)
                     self.muscleListArray.append(document.documentID)
                     self.tableView.reloadData()
                 }
             }
         }
-       
-       
+        
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
-
+        
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
-
+    
     // MARK: - Table view data source
-
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
     }
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         
         return muscleListArray.count
     }
-
+    
     // Configure the table view cell
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "muscleGroupList", for: indexPath)
-
+        
         cell.textLabel!.text = muscleListArray[indexPath.row]
         
-
+        
         return cell
     }
     
@@ -73,17 +73,17 @@ class MuscleListTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let muscleDetailVC = storyboard?.instantiateViewController(withIdentifier: "FilteredMuscleVC") as! FilteredListTableViewController
-            
-            muscleDetailVC.exercisesMuscle = muscleListArray[indexPath.row]
-            
+        
+        muscleDetailVC.exercisesMuscle = muscleListArray[indexPath.row]
+        
         //    }
         
-      //  )
+        //  )
         
         
         navigationController?.pushViewController(muscleDetailVC, animated: true)
         
     }
     
-
+    
 }

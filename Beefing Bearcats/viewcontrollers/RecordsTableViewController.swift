@@ -11,7 +11,7 @@ import UIKit
 
 
 class RecordsTableViewController: UITableViewController {
-
+    
     var records=Records.shared
     
     required init?(coder: NSCoder)
@@ -29,41 +29,41 @@ class RecordsTableViewController: UITableViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(recordAdded(notification:)), name: NSNotification.Name(rawValue:"Added Record"), object: nil)
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
-
+        
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
-
+    
     // MARK: - Table view data source
-
+    
     @objc func addRecord(){
-         
-             let addNewPlanVC = storyboard?.instantiateViewController(withIdentifier: "AddNewRecord") as! AddNewRecordViewController
-            
-             self.present(addNewPlanVC, animated: true, completion: nil)
-         }
+        
+        let addNewPlanVC = storyboard?.instantiateViewController(withIdentifier: "AddNewRecord") as! AddNewRecordViewController
+        
+        self.present(addNewPlanVC, animated: true, completion: nil)
+    }
     @objc func recordAdded(notification:Notification){
-     
+        
         tableView.reloadData()
     }
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
     }
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return records.numberOfRecords()
     }
     
     let d:CGFloat = 300
-
+    
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return d
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-            // Configure the cell...
+        // Configure the cell...
         let cell = tableView.dequeueReusableCell(withIdentifier: "record", for: indexPath)
         if let record=Records.shared[indexPath.row]
         {
@@ -79,11 +79,11 @@ class RecordsTableViewController: UITableViewController {
             
             
         }
-
+        
         
         return cell
     }
     
-
-   
+    
+    
 }

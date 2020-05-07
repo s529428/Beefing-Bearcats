@@ -11,20 +11,20 @@ import UIKit
 
 class ExcersiceTableViewController: UITableViewController {
     
-
+    
     required init?(coder: NSCoder)
-       {
-           super.init(coder: coder)
-           self.tabBarItem.image = UIImage(named: "icons8-ios-filled-excercise-small.png")
-           navigationItem.title = "EXCERSICES"
-       }
-
+    {
+        super.init(coder: coder)
+        self.tabBarItem.image = UIImage(named: "icons8-ios-filled-excercise-small.png")
+        navigationItem.title = "EXCERSICES"
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
-
+        
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
@@ -34,7 +34,7 @@ class ExcersiceTableViewController: UITableViewController {
     }
     
     // MARK: - Table view data source
-
+    
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 180.0
     }
@@ -43,12 +43,12 @@ class ExcersiceTableViewController: UITableViewController {
         // #warning Incomplete implementation, return the number of sections
         return 1
     }
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return Exercises.shared.numExercises()
     }
-
+    
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "excersiceDescription")!
@@ -58,12 +58,12 @@ class ExcersiceTableViewController: UITableViewController {
         
         nameLBL.text = Exercises.shared.getExercise(indexPath.row)!.name.uppercased()
         explanationLBL.text = Exercises.shared.getExercise(indexPath.row)!.explanation
-
+        
         
         return cell
     }
     
-
+    
     // configures the cell to display the list of specific muscle group exercises
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -73,7 +73,7 @@ class ExcersiceTableViewController: UITableViewController {
     }
     
     
-
-
+    
+    
 }
 

@@ -33,12 +33,12 @@ class HomeViewController: UIViewController {
     // method to display a tableview controller of muscle groups in a list
     
     @IBAction func muscleList(_ sender: AnyObject) {
-
+        
         let muscleTVC = storyboard?.instantiateViewController(withIdentifier: "MuscleListNC") as! MuscleListTableViewController
         self.navigationController!.pushViewController(muscleTVC, animated: true)
     }
     
-
+    
     required init?(coder: NSCoder)
     {
         super.init(coder: coder)
@@ -67,15 +67,15 @@ class HomeViewController: UIViewController {
         self.present(ac, animated: true)
     }
     
-
+    
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }

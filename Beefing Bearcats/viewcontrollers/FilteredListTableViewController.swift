@@ -29,7 +29,7 @@ class FilteredListTableViewController: UITableViewController {
                     if document.documentID == self.exercisesMuscle{
                         for field in document.data(){
                             self.exerciseDesc[field.key] = field.value
-                            print(field.key)
+                            print(field.key.uppercased())
                             print(field.value)
                             self.tableView.reloadData()
                             

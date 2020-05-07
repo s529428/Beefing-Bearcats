@@ -3,6 +3,7 @@
 //  Beefing Bearcats
 //
 //  Created by student on 3/16/20.
+//  Content by Santhosh Kumar Bollena
 //  Copyright © 2020 Finnerty,Caroline A. All rights reserved.
 //
 
@@ -22,6 +23,8 @@ class AddNewRecordViewController: UIViewController {
         
         // Do any additional setup after loading the view.
     }
+    
+    // Performs validations to enter records.
     @IBAction func addRecord(_ sender: Any) {
         if let name = nameTF.text{
             if let repitation = Int(RepitationTF.text!){

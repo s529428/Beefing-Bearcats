@@ -3,6 +3,7 @@
 //  Beefing Bearcats
 //
 //  Created by Caroline Finnerty on 2/23/20.
+//  Content by Gangadhar Yerramsetti
 //  Copyright © 2020 Finnerty,Caroline A. All rights reserved.
 //
 
@@ -63,7 +64,7 @@ class ExcersiceTableViewController: UITableViewController {
     }
     
 
-    // configures the 
+    // configures the cell to display the list of specific muscle group exercises
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let excersiceDetailVC = storyboard?.instantiateViewController(withIdentifier: "excerciseDetailViewController") as! ExcerciseDetailViewController
@@ -71,11 +72,7 @@ class ExcersiceTableViewController: UITableViewController {
         navigationController?.pushViewController(excersiceDetailVC, animated: true)
     }
     
-    @objc func addRecord(){
-        //AddNewRecord View controller called up
-        let addNewRecordVC = storyboard?.instantiateViewController(withIdentifier: "AddNewRecord") as! AddNewRecordViewController
-        self.present(addNewRecordVC, animated: true, completion: nil)
-    }
+    
 
 
 }

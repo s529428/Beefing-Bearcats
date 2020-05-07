@@ -3,6 +3,7 @@
 //  Beefing Bearcats
 //
 //  Created by student on 3/17/20.
+//  Content by Gangadhar Yerramsetti
 //  Copyright © 2020 Finnerty,Caroline A. All rights reserved.
 //
 
@@ -21,7 +22,8 @@ class MuscleListTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-    //    let db  = Firestore.firestore()
+        // firestore connection to the database is established
+        
         let db = Firestore.firestore()
         
         let muscleListArraydb = db.collection("MuscleExercises").getDocuments { (snapshot, error) in
@@ -57,18 +59,18 @@ class MuscleListTableViewController: UITableViewController {
         return muscleListArray.count
     }
 
-    
+    // Configure the table view cell
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "muscleGroupList", for: indexPath)
 
-        // Configure the cell...
         cell.textLabel!.text = muscleListArray[indexPath.row]
         
 
         return cell
     }
     
-
+    // Method identifies the cell selected
+    
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let muscleDetailVC = storyboard?.instantiateViewController(withIdentifier: "FilteredMuscleVC") as! FilteredListTableViewController
             

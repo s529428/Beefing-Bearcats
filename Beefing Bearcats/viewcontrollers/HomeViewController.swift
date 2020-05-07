@@ -12,6 +12,8 @@ import UIKit
 class HomeViewController: UIViewController {
     
     @IBOutlet weak var front:UIImageView!
+    
+    // method to display the front muscles of a body
     @IBAction func clickMefront(sender:UIButton)
     {
         if let path1 = Bundle.main.path(forResource: "Front11", ofType: ".png")
@@ -20,6 +22,7 @@ class HomeViewController: UIViewController {
         }
     }
     
+    // method to display the muscle of the back body
     @IBAction func clickMeback(sender:UIButton){
         if let path2 = Bundle.main.path(forResource: "Back11", ofType: ".png")
         {
@@ -27,11 +30,10 @@ class HomeViewController: UIViewController {
         }
     }
     
+    // method to display a tableview controller of muscle groups in a list
     
     @IBAction func muscleList(_ sender: AnyObject) {
-//        let muscleList = storyboard?.instantiateViewController(withIdentifier: "AddNewRecord") as! AddNewRecordViewController
-//        self.navigationController!.pushViewController(muscleList, animated: true)
-        
+
         let muscleTVC = storyboard?.instantiateViewController(withIdentifier: "MuscleListNC") as! MuscleListTableViewController
         self.navigationController!.pushViewController(muscleTVC, animated: true)
     }
@@ -42,6 +44,8 @@ class HomeViewController: UIViewController {
         super.init(coder: coder)
         self.tabBarItem.image = UIImage(named: "icons8-ios-filled-36.png")
     }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tabBarItem.image = UIImage(named: "icons8-ios-filled-36.png")
@@ -54,8 +58,6 @@ class HomeViewController: UIViewController {
             front.image=UIImage(contentsOfFile: path1)
         }
         
-
-        // Do any additional setup after loading the view.
     }
     
     @IBAction func moreInfo(){

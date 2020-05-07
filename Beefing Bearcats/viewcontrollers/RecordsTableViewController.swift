@@ -9,7 +9,7 @@
 
 import UIKit
 
-
+// Display all the records present in the database in a table view controller.
 class RecordsTableViewController: UITableViewController {
     
     var records=Records.shared
@@ -61,6 +61,7 @@ class RecordsTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return d
     }
+    //Configuring the record deatils in a cell
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         // Configure the cell...

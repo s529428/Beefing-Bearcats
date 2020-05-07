@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+// To display all the plans in a table view controller
 class PlansTableViewController: UITableViewController {
     
     @IBOutlet weak var plansTV: UITableView!
@@ -19,6 +19,7 @@ class PlansTableViewController: UITableViewController {
                      "210 Days Action plan",
                      "365 Days Action plan"
     ]
+    // To load the tabbar image while initializing app
     required init?(coder: NSCoder)
     {
         super.init(coder: coder)
@@ -40,7 +41,7 @@ class PlansTableViewController: UITableViewController {
         return planArray.count
     }
     
-    
+    //Configuring the cell details
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "PlansCell", for: indexPath)
         

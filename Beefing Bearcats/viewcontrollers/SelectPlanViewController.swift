@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+// Selecting a plan from the list of plans
 class SelectPlanViewController: UIViewController {
     
     var plan:Plan!

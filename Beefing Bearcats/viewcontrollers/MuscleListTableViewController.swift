@@ -10,15 +10,12 @@
 import UIKit
 import FirebaseFirestore
 import Firebase
-
+// Listing all muscles in table view controller.
 class MuscleListTableViewController: UITableViewController {
-    
-    
-    
+
     var muscleListArray:[String] = []
     
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         

@@ -9,14 +9,14 @@
 
 import Foundation
 
-
+// Properties of exercises.
 struct Exercise {
     let name:String
     let explanation:String
     let imagePath:String
     
 }
-
+// Configuring the Exercise deatils for the user
 class Exercises {
     
     private static var _shared:Exercises!
@@ -44,7 +44,7 @@ class Exercises {
             return nil
         }
     }
-    
+    // Getting the count of total exercises.
     func numExercises() -> Int {
         return exercises.count
     }

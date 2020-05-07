@@ -11,7 +11,7 @@ import UIKit
 
 class ExcersiceTableViewController: UITableViewController {
     
-    
+    // To load the tabbar image while initializing app
     required init?(coder: NSCoder)
     {
         super.init(coder: coder)
@@ -28,7 +28,7 @@ class ExcersiceTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
-    
+    // reloading the table data whean wver the view appears.
     override func viewWillAppear(_ animated: Bool) {
         tableView.reloadData()
     }
@@ -49,7 +49,7 @@ class ExcersiceTableViewController: UITableViewController {
         return Exercises.shared.numExercises()
     }
     
-    
+    // Seeting the cell details
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "excersiceDescription")!
         
@@ -65,7 +65,6 @@ class ExcersiceTableViewController: UITableViewController {
     
     
     // configures the cell to display the list of specific muscle group exercises
-    
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let excersiceDetailVC = storyboard?.instantiateViewController(withIdentifier: "excerciseDetailViewController") as! ExcerciseDetailViewController
         excersiceDetailVC.exercise = Exercises.shared.getExercise(indexPath.row)

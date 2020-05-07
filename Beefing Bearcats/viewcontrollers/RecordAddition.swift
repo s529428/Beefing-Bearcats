@@ -8,10 +8,9 @@
 //
 
 import UIKit
-
+//extension to add features for the record
 extension RecordsTableViewController {
     // A function to write  a new record as per the exercise.
-    
     @objc func add(){
         let ac = UIAlertController(title: "Add Record", message: "Specify name - hours!", preferredStyle: .alert)
         ac.addTextField(configurationHandler: nil)

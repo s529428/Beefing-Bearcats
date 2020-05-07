@@ -10,7 +10,7 @@
 import UIKit
 import Firebase
 import FirebaseFirestore
-
+//Adding a new record
 class AddNewRecordViewController: UIViewController {
     
     @IBOutlet weak var nameTF: UITextField!
@@ -61,6 +61,7 @@ class AddNewRecordViewController: UIViewController {
     @IBAction func cancelRecord(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
+    // Single alert function to display all the aleart messages based on message
     func alertMessage(_ titleText:String,_ messageText:String){
         let ac=UIAlertController(title: titleText, message: messageText, preferredStyle: .alert)
         let action = UIAlertAction(title: "Ok", style: .cancel)

@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+// Plan struct to define properties of a plan.
 struct Plan {
     let exer1:String
     let explanation1:String
@@ -23,6 +23,7 @@ struct Plan {
     let imagePath4:String
 }
 
+// Configuring the plan details
 class Plans {
     private static var _shared:Plans!
     
@@ -32,7 +33,7 @@ class Plans {
         }
         return _shared
     }
-    
+    //Static deatils of the plan.
     private var plans:[Plan] = [
         Plan(exer1: "EZ Bar Curl", explanation1: "", imagePath1: "",
              exer2: "Chin up", explanation2: "", imagePath2: "",
@@ -70,7 +71,7 @@ class Plans {
     
     private init(){
     }
-    
+    //Getting a single plan
     func getPlan(_ index:Int) -> Plan? {
         if index >= 0 && index < plans.count {
             return plans[index]
@@ -78,7 +79,7 @@ class Plans {
             return nil
         }
     }
-    
+    //Return total number of plans
     func returnPlans() -> Int {
         return plans.count
     }

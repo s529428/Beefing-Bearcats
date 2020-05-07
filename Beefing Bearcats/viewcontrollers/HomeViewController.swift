@@ -37,14 +37,14 @@ class HomeViewController: UIViewController {
         self.navigationController!.pushViewController(muscleTVC, animated: true)
     }
     
-    
+    // To load the tabbar image while initializing app
     required init?(coder: NSCoder)
     {
         super.init(coder: coder)
         self.tabBarItem.image = UIImage(named: "icons8-ios-filled-36.png")
     }
     
-    
+    // Loading the contents on home page
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tabBarItem.image = UIImage(named: "icons8-ios-filled-36.png")
@@ -58,7 +58,7 @@ class HomeViewController: UIViewController {
         }
         
     }
-    
+    // Information about the application
     @IBAction func moreInfo(){
         let ac = UIAlertController(title: "More info", message: "This app will help users have more viared and accurate to their goals weight routines. As far as we have researched there are no free apps on the app store that helps users pick exercises based on specific muscle groups they wish to develop. This app is meant for people who do not wish to invest in a personal trainer or do not know where to start, but still want to get ‘beefy’", preferredStyle: .alert)
         let action = UIAlertAction(title: "OK", style: .cancel)

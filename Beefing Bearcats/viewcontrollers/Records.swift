@@ -10,7 +10,7 @@
 import Foundation
 import FirebaseFirestore
 import Firebase
-
+// Defining the properties for a record
 struct Record {
     var name:String
     var repitations:Int
@@ -18,7 +18,7 @@ struct Record {
     var weight:Double
 }
 
-/// A collection of fine dining establishments, aka Records
+/// Configuring the record details for the user.
 class Records {
     
     private static var _shared:Records! // Only visible in this struct
@@ -29,7 +29,7 @@ class Records {
         }
         return _shared
     }
-    
+    //Static records for testing
     private var records:[Record] = [
         //        Record(name:"Goblet Squat",repitations: 10,Sets: 5,weight: 30),
         //                                         Record(name:"Dumbbell Clean",repitations: 10,Sets: 5,weight: 20),
@@ -38,7 +38,7 @@ class Records {
         //        Record(name:"One Arm Swing",repitations: 10,Sets: 3,weight: 15),
         //        Record(name:"Dumbbell Bench Press",repitations: 10,Sets: 2,weight: 40)
     ]
-    
+    //connecting to firebase to retriew the record details.
     private init(){
         let db = Firestore.firestore()
         
@@ -82,16 +82,13 @@ class Records {
         
     }
     
-    /// returns the number of restaurents
+    /// returns the number of records
     func numberOfRecords() -> Int
     {
         return records.count
     }
     
-    /// Returns restaurant at a given index, nil if non-existant
-    /// Example usage:  Restaurants.shared.getRestaurant(at:5)
-    /// - Parameter index: restaurant to return
-    
+    // Getting a record based on number.
     func getRecord(at index:Int)->Record? {
         if index >= 0 && index < records.count {
             return records[index]
@@ -100,16 +97,14 @@ class Records {
         }
     }
     
-    // Alternatively, we could subscript Restaurants, so usage would be Restaurants.shared[5]
+    // Alternatively, we could subscript records, so usage would be Records.shared[5]
     
     subscript(index:Int) -> Record? {
         return index >= 0 && index < records.count ? records[index] : nil
     }
     
-    /// Adds a restaurant to the collection
-    /// Example usage: Restaurants.shared.add(restaurant:Restaurant(name:"A & G", rating:4))
-    /// - Parameter restaurant: restaurant to add
-    
+   
+   //Adding a record to list of records
     func add(record:Record){
         records.append(record)
     }

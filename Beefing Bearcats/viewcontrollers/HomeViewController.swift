@@ -8,7 +8,7 @@
 //
 
 import UIKit
-
+//The class will define all the componests present in the home app.
 class HomeViewController: UIViewController {
     
     @IBOutlet weak var front:UIImageView!
@@ -31,7 +31,6 @@ class HomeViewController: UIViewController {
     }
     
     // method to display a tableview controller of muscle groups in a list
-    
     @IBAction func muscleList(_ sender: AnyObject) {
         
         let muscleTVC = storyboard?.instantiateViewController(withIdentifier: "MuscleListNC") as! MuscleListTableViewController

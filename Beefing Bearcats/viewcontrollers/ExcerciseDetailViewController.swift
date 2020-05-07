@@ -8,7 +8,7 @@
 //  Content by Gangadhar Yerramsetti
 
 import UIKit
-
+//The class will define all the exercices present in the app.
 class ExcerciseDetailViewController: UIViewController {
     
     var exercise:Exercise!
@@ -24,7 +24,7 @@ class ExcerciseDetailViewController: UIViewController {
     @IBOutlet weak var explanationLBL:UILabel!
     @IBOutlet weak var exerciseIV:UIImageView!
     
-    
+    //Wen ever the view appear updating the exercise properties
     override func viewWillAppear(_ animated: Bool) {
         
         exerciseName.text = exercise.name.uppercased()

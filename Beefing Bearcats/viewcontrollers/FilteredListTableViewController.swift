@@ -10,6 +10,7 @@ import UIKit
 import Firebase
 import FirebaseFirestore
 
+// This class pulls exercise data from database and builds an array of table view cells
 class FilteredListTableViewController: UITableViewController {
     
     var exercisesMuscle:String = ""
@@ -21,9 +22,13 @@ class FilteredListTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // firestore db is connected a constant in swift
         let db = Firestore.firestore()
         
-        let muscleListArraydb = db.collection("MuscleExercises").getDocuments { (snapshot, error) in
+        
+        // collection MuscleExercises from database is pulled.
+        
+        _ = db.collection("MuscleExercises").getDocuments { (snapshot, error) in
             if error == nil && snapshot != nil{
                 for document in snapshot!.documents{
                     if document.documentID == self.exercisesMuscle{
@@ -42,11 +47,6 @@ class FilteredListTableViewController: UITableViewController {
         }
         
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
     // MARK: - Table view data source
@@ -72,7 +72,6 @@ class FilteredListTableViewController: UITableViewController {
         let exercisenameLBL = cell.viewWithTag(10) as! UILabel
         let exerciseDetailLbL = cell.viewWithTag(20) as! UILabel
         print(indexPath.row)
-       // exercisenameLBL = self.exerciseDesc[indexPath.row].key
         exercisenameLBL.text = exerciseArray[indexPath.row]
         exerciseDetailLbL.text = exerciseHow[indexPath.row]
         

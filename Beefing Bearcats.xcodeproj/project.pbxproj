@@ -15,7 +15,6 @@
 		3F71129424088B230015E8EB /* Back11.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F71129324088B230015E8EB /* Back11.png */; };
 		3F71129624088B300015E8EB /* Front11.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F71129524088B300015E8EB /* Front11.png */; };
 		3F71135A242168EC0015E8EB /* MuscleListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F711359242168EC0015E8EB /* MuscleListTableViewController.swift */; };
-		3F71135C24216D680015E8EB /* MuscleGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F71135B24216D680015E8EB /* MuscleGroup.swift */; };
 		3FC9934C2428601E0061458B /* SelectPlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC9934B2428601E0061458B /* SelectPlanViewController.swift */; };
 		3FC9934E242862440061458B /* Plan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC9934D242862440061458B /* Plan.swift */; };
 		3FFC8F4124443D6800BF90DD /* FilteredListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFC8F4024443D6800BF90DD /* FilteredListTableViewController.swift */; };
@@ -50,7 +49,6 @@
 		3F71129324088B230015E8EB /* Back11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Back11.png; sourceTree = "<group>"; };
 		3F71129524088B300015E8EB /* Front11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Front11.png; sourceTree = "<group>"; };
 		3F711359242168EC0015E8EB /* MuscleListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuscleListTableViewController.swift; sourceTree = "<group>"; };
-		3F71135B24216D680015E8EB /* MuscleGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuscleGroup.swift; sourceTree = "<group>"; };
 		3FC9934B2428601E0061458B /* SelectPlanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPlanViewController.swift; sourceTree = "<group>"; };
 		3FC9934D242862440061458B /* Plan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plan.swift; sourceTree = "<group>"; };
 		3FFC8F4024443D6800BF90DD /* FilteredListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilteredListTableViewController.swift; sourceTree = "<group>"; };
@@ -101,7 +99,6 @@
 				3F4D6B142407A80000B2AB47 /* RecordAddition.swift */,
 				3F4D6BD6241F4D9800B2AB47 /* AddNewRecordViewController.swift */,
 				3F711359242168EC0015E8EB /* MuscleListTableViewController.swift */,
-				3F71135B24216D680015E8EB /* MuscleGroup.swift */,
 				3FFC8F4024443D6800BF90DD /* FilteredListTableViewController.swift */,
 				3FFC8F42244445FB00BF90DD /* MuscleExercises.swift */,
 			);
@@ -304,7 +301,6 @@
 				3F4D6B112407936B00B2AB47 /* Records.swift in Sources */,
 				521F9DD02405D82100806B38 /* ExcerciseDetailViewController.swift in Sources */,
 				521F9D9924037A1F00806B38 /* HomeViewController.swift in Sources */,
-				3F71135C24216D680015E8EB /* MuscleGroup.swift in Sources */,
 				521F9DD22407373800806B38 /* Excersice.swift in Sources */,
 				3F4D6B152407A80000B2AB47 /* RecordAddition.swift in Sources */,
 				3F4D6BD7241F4D9800B2AB47 /* AddNewRecordViewController.swift in Sources */,

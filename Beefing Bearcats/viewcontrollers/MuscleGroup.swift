@@ -22,32 +22,32 @@ class MuscleGroups {
         return _shared
     }
     
-    private var muscleGroups:[Muscle] = [
-        Muscle(name: "Arm"),
-        Muscle(name: "Legs"),
-        Muscle(name: "Biceps"),
-        Muscle(name: "Ham Strings"),
-        Muscle(name: "Triceps"),
-        Muscle(name: "Shoulder")
-        
-    ]
-    
+//    private var muscleGroups:[Muscle] = [
+//        Muscle(name: "Arm"),
+//        Muscle(name: "Legs"),
+//        Muscle(name: "Biceps"),
+//        Muscle(name: "Ham Strings"),
+//        Muscle(name: "Triceps"),
+//        Muscle(name: "Shoulder")
+//
+//    ]
+//
     private init(){
         
     }
     
-    func getMuscle(_ index:Int) -> Muscle? {
-        if index >= 0 && index < muscleGroups.count {
-            return muscleGroups[index]
-        } else {
-            return nil
-        }
-    }
-    
-    func numMuscles() -> Int {
-        return muscleGroups.count
-    }
-    
+//    func getMuscle(_ index:Int) -> Muscle? {
+//        if index >= 0 && index < muscleGroups.count {
+//            return muscleGroups[index]
+//        } else {
+//            return nil
+//        }
+//    }
+//    
+//    func numMuscles() -> Int {
+//        return muscleGroups.count
+//    }
+//    
     
 }
 

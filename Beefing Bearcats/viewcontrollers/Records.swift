@@ -9,6 +9,7 @@
 import Foundation
 import FirebaseFirestore
 import Firebase
+
 struct Record {
     var name:String
     var repitations:Int
@@ -16,12 +17,12 @@ struct Record {
     var weight:Double
 }
 
-/// A collection of fine dining establishments, aka Restaurants
+/// A collection of fine dining establishments, aka Records
 class Records {
     
     private static var _shared:Records! // Only visible in this struct
     var rec:[String:Any] = [:]
-    static var shared:Records {         // To access this anywhere, in the app just write Restaurants.shared
+    static var shared:Records {
         if _shared == nil {
             _shared = Records()
         }
@@ -37,15 +38,13 @@ class Records {
 //        Record(name:"Dumbbell Bench Press",repitations: 10,Sets: 2,weight: 40)
     ]
     
-    private init(){                         // We can't make another Restaurants instance, which is a Good Thing: we only want 1 model
+    private init(){
         let db = Firestore.firestore()
         
         let RecordsArraydb = db.collection("Records").getDocuments { (snapshot, error) in
             if error == nil && snapshot != nil{
                 for document in snapshot!.documents{
-                   // let documentData = document.data()
-                  //  print(documentData)
-                 
+                   
                     var demo=document.data().keys
                     var name1:String="";
                     var repitition1:Int=0;

@@ -3,8 +3,9 @@
 //  Beefing Bearcats
 //
 //  Created by Caroline Finnerty on 2/25/20.
+//  Content by Gangadhar Yerramsetti
 //  Copyright © 2020 Finnerty,Caroline A. All rights reserved.
-//
+//  Content by Gangadhar Yerramsetti
 
 import UIKit
 
@@ -25,9 +26,7 @@ class ExcerciseDetailViewController: UIViewController {
     
     
     override func viewWillAppear(_ animated: Bool) {
-        //Ask Rogers how to top left align labels while giving them enough space for lots of text
-        //explanationLBL.numberOfLines = 30
-        //explanationLBL.sizeToFit()
+        
         exerciseName.text = exercise.name.uppercased()
         explanationLBL.text = exercise.explanation
     }
